@@ -6,25 +6,46 @@
 }
 
 body {
-  background-color: rgb(44, 42, 42);
-  color: white;
   height: 20%;
   overflow: hidden;
 }
 
 nav {
   display: flex;
-  padding: 0 20px;
-  background-color: black;
+  background-color: rgb(62, 49, 49);
   height: 50px;
   justify-content: space-between;
   width: 100%;
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(138, 138, 34);
-  padding: 1% 0% 3% 0%;
+header a {
+  color: #6693ed;
+  padding: 15px 10px 30px 30px;
+}
+
+#beautiful {
+  margin: auto 10% auto auto;
+  display: block;
+  cursor: pointer;
+}
+
+#beautiful div {
+  width: 20px;
+  height: 2px;
+  background-color: whitesmoke;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+#good {
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(./img.png);
+  background-repeat: no-repeat;
+  background-position: 95% 60%;
 }
 
 #why {
@@ -48,30 +69,6 @@ h1 {
   top: 92px;
 }
 
-#beautiful {
-  margin: auto 0;
-  display: block;
-  cursor: pointer;
-}
-
-#beautiful div {
-  width: 35px;
-  height: 3px;
-  background-color: whitesmoke;
-  margin: 6px;
-  transition: 0.4s;
-}
-
-#good {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url(./img.png);
-  background-repeat: no-repeat;
-  background-position: 95% 60%;
-}
-
 #how {
   font-style: normal;
   font-weight: 700;
@@ -90,6 +87,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   line-height: 24px;
   color: #f4f5f7;
+  width: 80%;
 }
 
 #container {
