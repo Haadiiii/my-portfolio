@@ -9,6 +9,7 @@ body {
   background-color: rgb(44, 42, 42);
   color: white;
   height: 20%;
+  overflow: hidden;
 }
 
 nav {
@@ -27,23 +28,19 @@ h1 {
 }
 
 #why {
-  display: flex;
-  align-items: flex-start;
   font-family: 'Crete Round', serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #f55800;
-  padding-right: 60%;
+  padding: 90px 20px 24px;
 }
 
 #popular {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 120px 24px;
+  align-items: center;
   gap: 12px;
   width: 100%;
   height: 590px;
@@ -67,14 +64,12 @@ h1 {
 
 #good {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding: 90px 20px 24px;
   background-image: url(./img.png);
   background-repeat: no-repeat;
-  background-position: 100% 70%;
-  width: 100%;
+  background-position: 95% 60%;
 }
 
 #how {
@@ -91,8 +86,17 @@ h1 {
 #nice {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  line-height: 32px;
+  line-height: 24px;
   color: #f4f5f7;
+}
+
+#container {
+  padding-right: 100px;
+}
+
+li {
+  display: inline-block;
+  padding-right: 20px;
 }
