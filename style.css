@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 20%;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(62, 49, 49);
+  height: 50px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav a {
+  font-family: 'Roboto', sans-serif;
+  color: #e4e7ed;
+  padding: 15px 10px 30px 30px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+#beautiful {
+  margin: auto 10% auto auto;
+  display: block;
+  cursor: pointer;
+}
+
+#beautiful div {
+  width: 20px;
+  height: 2px;
+  background-color: whitesmoke;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+#good {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #1c1a19;
+  flex-direction: column;
+  background-image: url(./img.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: 100% 100%;
+  padding: 0 24px;
+}
+
+#why {
+  font-family: 'Crete Round', serif;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #f55800;
+  padding: 90px 32px 24px;
+}
+
+#popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 590px;
+  left: 0;
+  top: 92px;
+}
+
+#how {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+#nice {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 24px;
+  color: #f4f5f7;
+  width: 80%;
+}
+
+#container {
+  padding-right: 100px;
+}
+
+li {
+  display: inline-block;
+  flex-direction: row;
+  padding-right: 15px;
+}
