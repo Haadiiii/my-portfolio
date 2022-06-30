@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@200&family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -6,6 +6,7 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   height: 20%;
   overflow: hidden;
 }
@@ -18,9 +19,12 @@ nav {
   width: 100%;
 }
 
-header a {
-  color: #6693ed;
+nav a {
+  font-family: 'Roboto', sans-serif;
+  color: #e4e7ed;
   padding: 15px 10px 30px 30px;
+  text-decoration: none;
+  font-style: normal;
 }
 
 #beautiful {
@@ -38,24 +42,25 @@ header a {
 }
 
 #good {
-  background-color: black;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background-color: #1c1a19;
   flex-direction: column;
   background-image: url(./img.png);
   background-repeat: no-repeat;
-  background-position: 95% 60%;
+  background-size: 60%;
+  background-position: 100% 100%;
+  padding: 0 24px;
 }
 
 #why {
   font-family: 'Crete Round', serif;
-  font-style: normal;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #f55800;
-  padding: 90px 20px 24px;
+  padding: 90px 32px 24px;
 }
 
 #popular {
@@ -96,5 +101,6 @@ header a {
 
 li {
   display: inline-block;
-  padding-right: 20px;
+  flex-direction: row;
+  padding-right: 15px;
 }
