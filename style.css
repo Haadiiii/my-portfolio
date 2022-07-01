@@ -235,8 +235,11 @@ li {
 
 #one {
   background-image: url(./images/Placeholder.png);
-  margin-top: 80px;
+  margin-top: 24px;
   margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
 }
 
 #onem {
@@ -245,8 +248,12 @@ li {
   padding-right: 16px;
   font-size: 25px;
   color: #fff;
-  font-family: 'Crete Round', serif;
   font-weight: inherit;
+}
+
+.om {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
 }
 
 #onep {
@@ -281,13 +288,11 @@ li {
 }
 
 #onepro {
-  position: absolute;
   width: 327px;
   height: 48px;
   left: 0;
   right: 0;
   background-color: #ff6b00;
-  margin: 0 24px;
 }
 
 #onepro button {
@@ -304,8 +309,11 @@ li {
 
 #two {
   background-image: url(./images/Placeholder.png);
-  margin-top: 80px;
+  margin-top: 24px;
   margin-left: 24px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 #twom {
@@ -352,13 +360,11 @@ li {
 }
 
 #twopro {
-  position: absolute;
   width: 327px;
   height: 48px;
   left: 0;
   right: 0;
   background-color: #ff6b00;
-  margin: 0 24px;
 }
 
 #twopro button {
@@ -375,8 +381,11 @@ li {
 
 #three {
   background-image: url(./images/Placeholder.png);
-  margin-top: 80px;
+  margin-top: 24px;
   margin-left: 24px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 #threem {
@@ -423,13 +432,11 @@ li {
 }
 
 #threepro {
-  position: absolute;
   width: 327px;
   height: 48px;
   left: 0;
   right: 0;
   background-color: #ff6b00;
-  margin: 0 24px;
 }
 
 #threepro button {
@@ -446,8 +453,11 @@ li {
 
 #four {
   background-image: url(./images/Placeholder.png);
-  margin-top: 80px;
+  margin-top: 24px;
   margin-left: 24px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 #fourm {
@@ -494,13 +504,11 @@ li {
 }
 
 #fourpro {
-  position: absolute;
   width: 327px;
   height: 48px;
   left: 0;
   right: 0;
   background-color: #ff6b00;
-  margin: 0 24px;
 }
 
 #fourpro button {
@@ -517,10 +525,11 @@ li {
 
 #five {
   background-image: url(./images/Placeholder.png);
-
-  /* margin: 24px 15px; */
-  margin-top: 80px;
+  margin-top: 24px;
   margin-left: 24px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 #fivem {
@@ -567,13 +576,11 @@ li {
 }
 
 #fivepro {
-  position: absolute;
   width: 327px;
   height: 48px;
   left: 0;
   right: 0;
   background-color: #ff6b00;
-  margin: 0 24px;
 }
 
 #fivepro button {
@@ -590,23 +597,24 @@ li {
 
 #six {
   background-image: url(./images/Placeholder.png);
-
-  /* margin: 24px 15px; */
-  margin-top: 80px;
+  margin-top: 24px;
   margin-left: 24px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 #sixm {
   padding-top: 84px;
   padding-left: 16px;
   padding-right: 16px;
-  font-size: 32px;
   color: #fff;
-  font-family: 'Crete Round', serif;
 }
 
 .sim {
-  font-weight: inherit;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
 }
 
 #sixp {
@@ -640,12 +648,10 @@ li {
 }
 
 #sixpro {
-  position: absolute;
   width: 327px;
   height: 48px;
   left: 0;
   right: 0;
-  margin: 0 24px;
 }
 
 #sixpro button {
@@ -665,7 +671,7 @@ li {
   position: absolute;
 
   /* height: 1901px;  */
-  top: 4300px;
+  top: 4400px;
   background-color: #1c1a19;
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
