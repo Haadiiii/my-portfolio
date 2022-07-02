@@ -15,8 +15,8 @@
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps:
-- git clone "(https://github.com/Haadiiii/my-portfolio)"
-- cd "my-portfolio"
+- git clone https://github.com/Haadiiii/my-portfolio
+- cd my-portfolio
 
 
 
