@@ -11,6 +11,13 @@
 - HTML
 - CSS
 
+## Getting Started
+To get a local copy up and running follow these simple example steps:
+## prerequisites
+-must have git installed.
+## setup
+- git clone https://github.com/Haadiiii/my-portfolio
+- cd my-portfolio
 
 
 ## Authors
