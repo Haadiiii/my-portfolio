@@ -1,16 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Mobile Version Skeleton
+# Portfolio-project
 
 
-> Description the project.
+- A mobile portfolio page showcasing my projects and skills
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 
 
@@ -18,9 +17,13 @@
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Haadiiii)
-- Twitter: [@twitterhandle](https://twitter.com/HaaDiii_99)
+- GitHub: [@Haadiiii](https://github.com/Haadiiii)
+- Twitter: [@HaaDiii_99](https://twitter.com/HaaDiii_99)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
+
+## LIVE DEMO
+https://haadiiii.github.io/my-portfolio/
+
 
 
 ## 🤝 Contributing
