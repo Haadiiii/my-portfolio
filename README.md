@@ -8,13 +8,15 @@
 
 ## Built With
 
-- Major languages (html,css)
-- Frameworks
-- Technologies used
+- HTML
+- CSS
 
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps:
+## prerequisites
+-must have git installed.
+## setup
 - git clone https://github.com/Haadiiii/my-portfolio
 - cd my-portfolio
 
@@ -24,9 +26,13 @@ To get a local copy up and running follow these simple example steps:
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Haadiiii)
-- Twitter: [@twitterhandle](https://twitter.com/HaaDiii_99)
+- GitHub: [@Haadiiii](https://github.com/Haadiiii)
+- Twitter: [@HaaDiii_99](https://twitter.com/HaaDiii_99)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
+
+## LIVE DEMO
+https://haadiiii.github.io/my-portfolio/
+
 
 
 ## 🤝 Contributing
