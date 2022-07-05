@@ -267,7 +267,7 @@ li {
 }
 
 #ones {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   font-family: 'Inter', sans-serif;
@@ -340,7 +340,7 @@ li {
 }
 
 #twos {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   font-family: 'Inter', sans-serif;
@@ -412,7 +412,7 @@ li {
 }
 
 #threes {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   font-family: 'Inter', sans-serif;
@@ -484,7 +484,7 @@ li {
 }
 
 #fours {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   font-family: 'Inter', sans-serif;
@@ -812,4 +812,28 @@ li {
 
 #bulletsix li {
   margin-top: 10%;
+}
+/* contact form start  */
+
+#maincontact{
+  background-color: #ffffff;
+  position: absolute;
+  display: grid ;
+  height: 844px;
+  width: 329px;
+  padding: 124px 24px;
+  top: 6482px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  font-family:'Inter', sans-serif;
+  text-align: center;
+  color: #172b4d;
+  height: 216px;
+  font-size: 32px;
+  font-weight: 700;
+  text-
+  height: 216px;
+  width: 327px;
 }
