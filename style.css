@@ -667,7 +667,8 @@ li {
 }
 
 #about {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: absolute;
 
   /* height: 1901px;  */
@@ -816,14 +817,12 @@ li {
 
 /* contact form start  */
 
-#maincontact {
-  background-color: #ffffff;
+#maincontact{
   position: absolute;
+  top: 6500px;
+  background-color: #ffffff;
   display: grid;
-  height: 844px;
-  width: 329px;
   padding: 124px 24px;
-  top: 6482px;
 }
 
 .contact {
@@ -852,20 +851,15 @@ li {
   order: 1;
   flex-grow: 0;
   margin-top: 58px;
-}
 
-/* form {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
-  height: 330px;
-  align-items: center;
-} */
+}
 
 #form-contact{
   padding-left: 15px;
   gap: 10px;
+
 }
+
 
 .name {
   width: 327px;
@@ -878,6 +872,11 @@ li {
   border-left: 0px;
   border-right: 0px;
   border-color:#DBD8D7;
+  padding-left: 15px;
+}
+
+.name::placeholder{
+  color: #979493;
 }
 
 .email{
@@ -889,15 +888,71 @@ li {
   border-right: 0px;
   font-size: 15px;
   border-color:#DBD8D7;
+  padding-left: 15px;
+
+}
+.email::placeholder{
+  color: #979493;
 }
 
 .txt-area{
   width: 327px;
   margin-top: 24px;
   border: none;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 32px;
-  font-family: 'Inter', sans-serif;
   background: #FBF8F7;
+  padding-left: 15px;
+
+}
+
+.txt-area::placeholder{
+  color: #3c3a39;
+  font-weight: 400;
+}
+
+.formclick{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 115px;
+  padding-top: 24px;
+}
+.formclick button{
+  background-color: #ff6b00;
+  align-items: center;
+  padding: 12px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+
+} 
+.formclick button:hover{
+  transition: 0.3s;
+}
+
+#c-line{
+  height: 1px;
+  margin-top: 120px;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  color: white;
+  border: 1px solid #fff;
+}
+
+#c-line > img{
+  width: 372px;
+}
+
+.l-line > img{
+  margin-left: 10px;
+}
+#s-icons{
+  margin-top: 25px;
+  margin-left: 95px;
 }
