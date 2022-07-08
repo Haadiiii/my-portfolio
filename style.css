@@ -246,10 +246,7 @@ li {
   padding: 10px 10px;
 }
 
-#click :hover {
-  transition: 0.3s;
-  cursor: pointer;
-}
+
 
 #one {
   background-image: url(./images/new1.png);
@@ -1118,6 +1115,13 @@ footer {
     transition: 1s;
   }
   
+  #bullettwo li:hover {
+    background-color: #f46106;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10rem;
+  }
+
   #sixpic {
     display: grid;
     grid-column-gap: 140px;
