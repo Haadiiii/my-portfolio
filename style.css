@@ -1117,6 +1117,7 @@ footer {
     transition-property: all;
     transition: 1s;
   }
+  
   #sixpic {
     display: grid;
     grid-column-gap: 140px;
