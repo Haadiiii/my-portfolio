@@ -1092,6 +1092,7 @@ footer {
     flex-direction: column;
     padding-top: 100px;
   }
+  
 
   .prohead {
     margin-left: 60px;
@@ -1110,7 +1111,12 @@ footer {
     padding-right: 600px;
     text-align: center;
   }
-
+  
+  #social li:hover{
+    background-color: #eb8c51;
+    transition-property: all;
+    transition: 1s;
+  }
   #sixpic {
     display: grid;
     grid-column-gap: 140px;
