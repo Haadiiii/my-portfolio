@@ -246,8 +246,10 @@ li {
   padding: 10px 10px;
 }
 
-#click :hover {
+#social li:hover {
+  background-color: #6fb90e;
   transition: 0.3s;
+  color: rgb(22, 5, 92);
   cursor: pointer;
 }
 
