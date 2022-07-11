@@ -1087,7 +1087,6 @@ footer {
     flex-direction: column;
     padding-top: 100px;
   }
-  
 
   .prohead {
     margin-left: 60px;
@@ -1106,13 +1105,12 @@ footer {
     padding-right: 600px;
     text-align: center;
   }
-  
-  #social li:hover{
+
+  #social li:hover {
     background-color: #eb8c51;
-    transition-property: all;
     transition: 1s;
   }
-  
+
   #bullettwo li:hover {
     background-color: #f46106;
     transition: 0.3s;
