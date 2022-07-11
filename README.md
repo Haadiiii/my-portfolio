@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
 
 ## LIVE DEMO
-https://haadiiii.github.io/my-portfolio/
+[my portfolio](https://haadiiii.github.io/my-portfolio/)
 
 
 ## SCREENSHOTS
