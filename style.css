@@ -1095,6 +1095,9 @@ footer {
 
   .para {
     margin-right: 30px;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
   }
 
   #social {
