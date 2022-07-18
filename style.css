@@ -9,7 +9,8 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 20%;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
 }
@@ -52,15 +53,18 @@ nav {
   transition: 0.4s;
 }
 
-#beautiful.active .bar:nth-child(2){
+#beautiful.active .bar:nth-child(2) {
   opacity: 0;
 }
-#beautiful.active .bar:nth-child(1){
+
+#beautiful.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
-  #beautiful.active .bar:nth-child(3){
-    transform: translateY(-4px) rotate(-45deg);
-  }
+
+#beautiful.active .bar:nth-child(3) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
 #hidden {
   position: fixed;
   left: 700px;
@@ -72,24 +76,28 @@ nav {
   text-align: center;
   justify-content: center;
   transition: 0.3s;
-  
 }
 
-.pb, .ab, .cb{
+.pb,
+.ab,
+.cb {
   margin: 16px 0;
 }
-.pb, .ab, .cb > :hover{
-  color: #f46106 ;
 
+.pb,
+.ab,
+.cb > :hover {
+  color: #f46106;
 }
-#hidden.active{
+
+#hidden.active {
   left: 0;
 }
 
-
-#hidden :hover{
+#hidden :hover {
   color: #eb8c51;
 }
+
 .good {
   display: flex;
   align-items: flex-start;
