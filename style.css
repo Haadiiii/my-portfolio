@@ -43,6 +43,7 @@ nav {
   margin: auto 10% auto auto;
   display: block;
   cursor: pointer;
+  margin-left: 250px;
 }
 
 .bar {
@@ -65,28 +66,42 @@ nav {
   transform: translateY(-4px) rotate(-45deg);
 }
 
+.wel.active {
+  display: hidden;
+  visibility: hidden;
+}
+
 #hidden {
   position: fixed;
-  left: 700px;
-  top: 50px;
+  left: -100%;
+  top: 20px;
   gap: 0;
   flex-direction: column;
   background-color: #3e3c3c;
-  width: 100%;
+  width: 375px;
   text-align: center;
   justify-content: center;
   transition: 0.3s;
+  height: 755px;
+  border-top-right-radius: 60px;
 }
 
-.pb,
-.ab,
-.cb {
-  margin: 16px 0;
+.nav-link {
+  margin-top: 40px;
+  color: rgba(255, 245, 225, 1);
+  font-family: 'inter', sans-serif;
+  font-weight: 700px;
+  border-bottom: #928f8d;
+  border-style: double;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 32px;
+  line-height: 74px;
+  margin-right: 150px;
 }
 
-.pb,
-.ab,
-.cb > :hover {
+.nav-link :hover {
   color: #f46106;
 }
 
