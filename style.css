@@ -9,10 +9,14 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 20%;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 nav {
   display: flex;
-  background-color: rgb(62, 49, 49);
+  background-color: #3e3c3c;
   height: 50px;
   justify-content: space-between;
   width: 100%;
@@ -34,24 +38,23 @@ nav {
   display: none;
 }
 
-#beautiful {
-  margin: auto 10% auto auto;
-  display: block;
-  cursor: pointer;
+
+
+.pb, .ab, .cb{
+  margin: 16px 0;
+}
+.pb, .ab, .cb > :hover{
+  color: #f46106 ;
+
+}
+#hidden.active{
+  left: 0;
 }
 
-#beautiful div {
-  width: 20px;
-  height: 2px;
-  background-color: whitesmoke;
-  margin: 4px;
-  transition: 0.4s;
-}
 
-#hidden {
-  display: none;
+#hidden :hover{
+  color: #eb8c51;
 }
-
 .good {
   display: flex;
   align-items: flex-start;
