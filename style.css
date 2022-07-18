@@ -38,7 +38,42 @@ nav {
   display: none;
 }
 
+#beautiful {
+  margin: auto 10% auto auto;
+  display: block;
+  cursor: pointer;
+}
 
+.bar {
+  width: 20px;
+  height: 2px;
+  background-color: whitesmoke;
+  margin: 4px;
+  transition: 0.4s;
+}
+
+#beautiful.active .bar:nth-child(2){
+  opacity: 0;
+}
+#beautiful.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+  #beautiful.active .bar:nth-child(3){
+    transform: translateY(-4px) rotate(-45deg);
+  }
+#hidden {
+  position: fixed;
+  left: 700px;
+  top: 50px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #3e3c3c;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  transition: 0.3s;
+  
+}
 
 .pb, .ab, .cb{
   margin: 16px 0;
