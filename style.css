@@ -74,8 +74,7 @@ nav {
 }
 
 .wel.active {
-  display: hidden;
-  visibility: hidden;
+  display: none;
 }
 
 #hidden {
@@ -107,7 +106,7 @@ nav {
   /* margin-top: 40px; */
   color: rgba(255, 245, 225, 1);
   font-family: 'inter', sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 32px;
   line-height: 74px;
   margin-left: 40px;
@@ -320,48 +319,54 @@ li {
   text-align: center;
   padding: 10px 10px;
 }
-.modal-header{
+
+.modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.modal{
+
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   z-index: 10;
   transition: 200ms ease-in-out;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   max-width: 85%;
   height: 100%;
   border: 1px solid #dfe1e6;
 }
-.modal.active{
+
+.modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
-.title{
+
+.title {
   font-family: 'Roboto', sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 44px;
   color: #172b4d;
   margin: 24px;
-
 }
-.modal-headd{
+
+.modal-headd {
   display: none;
 }
-.close-button{
+
+.close-button {
   cursor: pointer;
   outline: none;
   margin-right: 24px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: none;
   font-size: 30px;
   margin-bottom: 44px;
 }
+
 #modal-social {
   display: flex;
   flex-direction: row;
@@ -386,7 +391,8 @@ li {
   color: #091e42;
   text-decoration: none;
 }
-.modal-pic{
+
+.modal-pic {
   display: flex;
   flex-direction: column;
   background-image: url(./images/SnapshootPortfolio.png);
@@ -394,7 +400,8 @@ li {
   margin-top: 20px;
   margin-left: 24px;
 }
-.modal-body{
+
+.modal-body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   width: 310px;
@@ -402,9 +409,11 @@ li {
   color: #344563;
   margin-top: 250px;
 }
-.modal-desktop{
+
+.modal-desktop {
   display: none;
 }
+
 .modal-button {
   display: flex;
   flex-direction: row;
@@ -415,6 +424,7 @@ li {
   margin-bottom: 160px;
   align-items: center;
 }
+
 .live-button {
   background-color: #ff6b00;
   border-color: #ff6b00;
@@ -429,7 +439,8 @@ li {
   text-align: center;
   padding: 16px 32px;
 }
-.source-button{
+
+.source-button {
   background-color: #ff6b00;
   background-image: url(./images/Vector.png);
   background-position: 95% 50%;
@@ -444,7 +455,7 @@ li {
   padding: 16px 32px;
 }
 
-#overlay{
+#overlay {
   position: fixed;
   opacity: 0;
   top: 0;
@@ -452,12 +463,139 @@ li {
   right: 0;
   bottom: 0;
   transition: 200ms ease-in-out;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   pointer-events: none;
 }
-#overlay.active{
+
+#overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.live-button:hover {
+  background-color: #322c21;
+  color: #fb6f2e;
+  border-color: #eee9e8;
+}
+
+.source-button:hover {
+  background-color: #2d2922;
+  color: #fb6f2e;
+  border-color: #eee9e8;
+}
+
+#onepro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#twopro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#threepro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#fourpro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#fivepro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#sixpro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#click button:hover {
+  background-color: #fff5e1;
+  color: #fb6f2e;
+  border-color: #eee9e8;
+}
+
+#onepro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#twopro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#threepro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#fourpro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#fivepro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#sixpro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
 }
 
 #one {
@@ -487,7 +625,7 @@ li {
 #onep {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -528,18 +666,6 @@ li {
   margin-top: 360px;
 }
 
-#onepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #two {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
@@ -567,7 +693,7 @@ li {
 #twop {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -602,18 +728,6 @@ li {
   background-color: #ff6b00;
 }
 
-#twopro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #three {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
@@ -641,7 +755,7 @@ li {
 #threep {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -676,18 +790,6 @@ li {
   background-color: #ff6b00;
 }
 
-#threepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #four {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
@@ -715,7 +817,7 @@ li {
 #fourp {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -750,18 +852,6 @@ li {
   background-color: #ff6b00;
 }
 
-#fourpro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #five {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
@@ -789,7 +879,7 @@ li {
 #fivep {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -824,18 +914,6 @@ li {
   background-color: #ff6b00;
 }
 
-#fivepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #six {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
@@ -863,7 +941,7 @@ li {
 #sixp {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -895,18 +973,6 @@ li {
   height: 48px;
   left: 0;
   right: 0;
-}
-
-#sixpro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
 }
 
 #about {
@@ -1002,9 +1068,11 @@ li {
 #bullettwo li {
   margin-top: 10%;
 }
-#maintwo{
+
+#maintwo {
   margin-top: -150px;
 }
+
 #bulletthree {
   display: inline-flex;
   color: #fff;
@@ -1178,7 +1246,7 @@ footer {
   top: 6968px;
 }
 
-#twopro:hover{
+#twopro:hover {
   background-color: #eb8c51;
   cursor: pointer;
 }
@@ -1352,47 +1420,126 @@ footer {
     cursor: pointer;
     border-radius: 10rem;
   }
-  .modal{
-    max-width: 80%;
+
+  .modal {
+    max-width: 75%;
+    max-height: 85%;
   }
-  .modal-pic{
+
+  .modal-pic {
     display: flex;
     flex-direction: row;
     background-image: url(./images/SnapshootPortfolio2.png);
-    background-size:45% 110%;
-    height: 420px;
+    background-size: 55% 100%;
+    height: 450px;
+    margin-left: 50px;
+
     /* width: 20%; */
   }
-  .modal-mobile{
+
+  .modal-headm {
     display: none;
-    
   }
-  .modal-desktop{
+
+  .modal-headd {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #172b4d;
+    margin: 24px;
+  }
+
+  .modal-mobile {
+    display: none;
+  }
+
+  #modal-social {
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+
+  .modal-desktop {
     display: flex;
+
     /* position: absolute; */
     flex-direction: row;
     font-family: 'Inter', sans-serif;
-    font-weight: 400px;
-    width: 450px;
+    font-weight: 400;
+    width: 400px;
     font-size: 16px;
     line-height: 30px;
-    margin-left: 580px;
+    margin-left: 640px;
     margin-top: -250px;
+  }
 
+  .modal-button {
+    margin-left: 690px;
+    margin-top: -70px;
   }
-  .modal-button{
-    margin-left: 600px;
-    margin-top: -80px;
+
+  .live-button {
+    background-color: #f55800;
   }
- 
-  .modal-headd{
-  font-family: 'Roboto', sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 44px;
-  color: #172b4d;
-  margin: 24px;
+
+  .source-button {
+    background-color: #f55800;
   }
+
+  .live-button:hover {
+    background-color: #322c21;
+    color: #fb6f2e;
+    border-color: #eee9e8;
+  }
+
+  .source-button:hover {
+    background-color: #2d2922;
+    color: #fb6f2e;
+    border-color: #eee9e8;
+  }
+
+  #click button:hover {
+    background-color: #fff5e1;
+    color: #fb6f2e;
+    border-color: #eee9e8;
+  }
+
+  #onepro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+  }
+
+  #twopro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+  }
+
+  #threepro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+  }
+
+  #fourpro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+  }
+
+  #fivepro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+  }
+
+  #sixpro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+  }
+
   #sixpic {
     display: grid;
     grid-column-gap: 140px;
@@ -1402,7 +1549,6 @@ footer {
     height: 435px;
     width: 100%;
   }
-  
 
   #one {
     width: 100%;
@@ -1413,82 +1559,77 @@ footer {
 
   #onepro {
     background-image: url(./images/new1.png);
-    background-repeat: no-repeat;
     display: flex;
     z-index: 2;
     flex-direction: column;
     background-repeat: no-repeat;
     margin-top: 360px;
-    
     cursor: pointer;
   }
-  #two:hover #twopro{
+
+  #twopro {
+    display: none;
+    cursor: pointer;
+    background-color: #eb8c51;
+  }
+
+  #two:hover #twopro {
     display: block;
     cursor: pointer;
     transition: 0.5s ease-in-out;
     font-size: 2px;
     background-color: #eb8c51;
-    
   }
-  
-  #twopro{
-    display: none;
-    cursor: pointer;
-    background-color: #eb8c51;
-  }
-  #three:hover #threepro{
-    display: block;
-    cursor: pointer;
-  }
-  #threepro{
-    display: none;
-    cursor: pointer;
-  }
-  #four:hover #fourpro{
-    display: block;
-    cursor: pointer;
-    cursor: pointer;
-  }
-  #fourpro{
+
+  #threepro {
     display: none;
     cursor: pointer;
   }
 
-  #five:hover #fivepro{
+  #three:hover #threepro {
     display: block;
     cursor: pointer;
-    cursor: pointer;
   }
-  #fivepro{
-    display: none;
-    cursor: pointer;
-  }
-  
-  #six:hover #sixpro{
-    display: block;
-    cursor: pointer;
-    cursor: pointer;
-  }
-  #sixpro{
+
+  #fourpro {
     display: none;
     cursor: pointer;
   }
 
+  #four:hover #fourpro {
+    display: block;
+    cursor: pointer;
+  }
+
+  #fivepro {
+    display: none;
+    cursor: pointer;
+  }
+
+  #five:hover #fivepro {
+    display: block;
+    cursor: pointer;
+  }
+
+  #sixpro {
+    display: none;
+    cursor: pointer;
+  }
+
+  #six:hover #sixpro {
+    display: block;
+    cursor: pointer;
+  }
 
   #two {
     width: 326px;
     height: 410px;
     background-image: url(./images/new2.png);
     background-repeat: no-repeat;
-    transition-property: 2px;
     transition-duration: 1s;
     transition-delay: 1s;
   }
 
-  #two:hover{
-    cursor: pointer;
-    
-  }
   #twom {
     margin-top: 115px;
     font-family: 'Crete Round', serif;
@@ -1514,7 +1655,6 @@ footer {
     width: 326px;
     height: 410px;
     margin-top: 60px;
-
   }
 
   #fourm {
@@ -1545,7 +1685,6 @@ footer {
     background-image: url(./images/new3.png);
     background-repeat: no-repeat;
     margin-top: 80px;
-
   }
 
   #sixm {
