@@ -10,9 +10,14 @@ body {
   height: 20%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 nav {
   display: flex;
-  background-color: rgb(62, 49, 49);
+  background-color: #3e3c3c;
   height: 50px;
   justify-content: space-between;
   width: 100%;
@@ -34,13 +39,21 @@ nav {
   display: none;
 }
 
-#beautiful {
-  margin: auto 10% auto auto;
+#menu {
   display: block;
-  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 38px;
 }
 
-#beautiful div {
+#beautiful {
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 38px;
+}
+
+.bar {
   width: 20px;
   height: 2px;
   background-color: whitesmoke;
@@ -48,8 +61,70 @@ nav {
   transition: 0.4s;
 }
 
+#beautiful.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#beautiful.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#beautiful.active .bar:nth-child(3) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.wel.active {
+  display: hidden;
+  visibility: hidden;
+}
+
 #hidden {
-  display: none;
+  position: absolute;
+  left: -100%;
+  top: 0.001px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #3e3c3c;
+  width: 100%;
+
+  /* text-align: center; */
+  justify-content: center;
+  align-items: flex-start;
+  transition: 0.3s;
+  height: 755px;
+  border-top-right-radius: 60px;
+}
+
+#hidden hr {
+  margin: 24px;
+}
+
+.link1 {
+  margin-top: 108px;
+}
+
+.nav-link {
+  /* margin-top: 40px; */
+  color: rgba(255, 245, 225, 1);
+  font-family: 'inter', sans-serif;
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 74px;
+  margin-left: 40px;
+
+  /* margin-right: 150px; */
+}
+
+.nav-link :hover {
+  color: #f46106;
+}
+
+#hidden.active {
+  left: 0;
+}
+
+#hidden :hover {
+  color: #eb8c51;
 }
 
 .good {
