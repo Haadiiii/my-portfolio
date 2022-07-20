@@ -320,10 +320,150 @@ li {
   text-align: center;
   padding: 10px 10px;
 }
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 10;
+  transition: 200ms ease-in-out;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 85%;
+  height: 100%;
+  border: 1px solid #dfe1e6;
+}
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 24px;
+
+}
+.modal-headd{
+  display: none;
+}
+.close-button{
+  cursor: pointer;
+  outline: none;
+  margin-right: 24px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 30px;
+  margin-bottom: 44px;
+}
+#modal-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  padding-left: 24px;
+  width: 400px;
+  font-weight: 600;
+}
+
+#modal-social li {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  margin: 0 3px;
+}
+
+#modal-social a {
+  color: #091e42;
+  text-decoration: none;
+}
+.modal-pic{
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/SnapshootPortfolio.png);
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+.modal-body{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  width: 310px;
+  height: 180px;
+  color: #344563;
+  margin-top: 250px;
+}
+.modal-desktop{
+  display: none;
+}
+.modal-button {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-top: 24px;
+  height: 48px;
+  margin-left: 24px;
+  margin-bottom: 160px;
+  align-items: center;
+}
+.live-button {
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+  background-image: url(./images/Icon.png);
+  background-position: 90% 45%;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  padding: 16px 32px;
+}
+.source-button{
+  background-color: #ff6b00;
+  background-image: url(./images/Vector.png);
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  border-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  padding: 16px 32px;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, .8);
+  pointer-events: none;
+}
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
 
 #one {
   background-image: url(./images/new1.png);
-  margin-top: 24px;
+  position: relative;
+  bottom: 9px;
   margin-left: 24px;
   display: flex;
   flex-direction: column;
@@ -403,6 +543,8 @@ li {
 #two {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 15px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -475,6 +617,8 @@ li {
 #three {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 30px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -547,6 +691,8 @@ li {
 #four {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 55px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -619,6 +765,8 @@ li {
 #five {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 80px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -691,6 +839,8 @@ li {
 #six {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 90px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -762,9 +912,9 @@ li {
 #about {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   width: 375px;
-  top: 4053px;
+  top: 2653px;
   background-color: #1c1a19;
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
@@ -852,7 +1002,9 @@ li {
 #bullettwo li {
   margin-top: 10%;
 }
-
+#maintwo{
+  margin-top: -150px;
+}
 #bulletthree {
   display: inline-flex;
   color: #fff;
@@ -910,8 +1062,8 @@ li {
 /* contact form start  */
 
 #maincontact {
-  position: absolute;
-  top: 6193px;
+  position: relative;
+  top: 2693px;
   background-color: #fff;
   display: grid;
 }
@@ -1024,6 +1176,11 @@ li {
 footer {
   position: absolute;
   top: 6968px;
+}
+
+#twopro:hover{
+  background-color: #eb8c51;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -1195,37 +1352,143 @@ footer {
     cursor: pointer;
     border-radius: 10rem;
   }
+  .modal{
+    max-width: 80%;
+  }
+  .modal-pic{
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-size:45% 110%;
+    height: 420px;
+    /* width: 20%; */
+  }
+  .modal-mobile{
+    display: none;
+    
+  }
+  .modal-desktop{
+    display: flex;
+    /* position: absolute; */
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400px;
+    width: 450px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 580px;
+    margin-top: -250px;
 
+  }
+  .modal-button{
+    margin-left: 600px;
+    margin-top: -80px;
+  }
+ 
+  .modal-headd{
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 24px;
+  }
   #sixpic {
     display: grid;
     grid-column-gap: 140px;
     grid-template-columns: repeat(3, 250px);
-    grid-auto-rows: 450px;
+    grid-auto-rows: 480px;
     justify-content: center;
     height: 435px;
     width: 100%;
   }
+  
 
   #one {
     width: 100%;
     height: 400px;
+    margin-top: 85px;
+    cursor: pointer;
   }
 
   #onepro {
     background-image: url(./images/new1.png);
+    background-repeat: no-repeat;
     display: flex;
+    z-index: 2;
     flex-direction: column;
     background-repeat: no-repeat;
     margin-top: 360px;
+    
+    cursor: pointer;
   }
+  #two:hover #twopro{
+    display: block;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-size: 2px;
+    background-color: #eb8c51;
+    
+  }
+  
+  #twopro{
+    display: none;
+    cursor: pointer;
+    background-color: #eb8c51;
+  }
+  #three:hover #threepro{
+    display: block;
+    cursor: pointer;
+  }
+  #threepro{
+    display: none;
+    cursor: pointer;
+  }
+  #four:hover #fourpro{
+    display: block;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  #fourpro{
+    display: none;
+    cursor: pointer;
+  }
+
+  #five:hover #fivepro{
+    display: block;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  #fivepro{
+    display: none;
+    cursor: pointer;
+  }
+  
+  #six:hover #sixpro{
+    display: block;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  #sixpro{
+    display: none;
+    cursor: pointer;
+  }
+
 
   #two {
     width: 326px;
     height: 410px;
     background-image: url(./images/new2.png);
     background-repeat: no-repeat;
+    transition-property: 2px;
+    transition-duration: 1s;
+    transition-delay: 1s;
   }
 
+  #two:hover{
+    cursor: pointer;
+    
+  }
   #twom {
     margin-top: 115px;
     font-family: 'Crete Round', serif;
@@ -1250,6 +1513,8 @@ footer {
   #four {
     width: 326px;
     height: 410px;
+    margin-top: 60px;
+
   }
 
   #fourm {
@@ -1264,6 +1529,7 @@ footer {
     height: 390px;
     background-image: url(./images/new2.png);
     background-repeat: no-repeat;
+    margin-top: 80px;
   }
 
   #fivem {
@@ -1278,6 +1544,8 @@ footer {
     height: 390px;
     background-image: url(./images/new3.png);
     background-repeat: no-repeat;
+    margin-top: 80px;
+
   }
 
   #sixm {
@@ -1362,7 +1630,7 @@ footer {
   #maincontact {
     display: flex;
     flex-direction: row;
-    top: 3800px;
+    top: 2500px;
     width: 100%;
     justify-content: center;
   }
