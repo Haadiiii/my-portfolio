@@ -187,7 +187,6 @@ openModalButtons4.addEventListener('click', appearrrr);
 openModalButtons3.addEventListener('click', appearrr);
 openModalButtons2.addEventListener('click', appearr);
 
-
 // Form javascript
 
 const form = document.getElementById('subit');
