@@ -2,7 +2,6 @@ const hamburger = document.querySelector('#beautiful');
 const navMenu = document.querySelector('#hidden');
 const nextHamburger = document.querySelector('#menu');
 
-
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
@@ -32,7 +31,7 @@ const modalInformation = {
   li3: 'Ruby on rails',
 };
 
-let div1 = document.createElement('div');
+const div1 = document.createElement('div');
 div1.className = 'modal';
 document.body.appendChild(div1);
 
@@ -59,7 +58,7 @@ h22.textContent = modalInformation.title2;
 h20.appendChild(h22);
 
 const span = document.createElement('button');
-span.className ='close-button';
+span.className = 'close-button';
 span.innerHTML = '&times;';
 div.appendChild(span);
 
@@ -94,7 +93,6 @@ const div12 = document.createElement('div');
 div12.className = 'modal-body';
 div4.appendChild(div12);
 
-
 const p = document.createElement('p');
 p.className = 'modal-mobile';
 p.textContent = modalInformation.description2;
@@ -119,99 +117,72 @@ button2.className = 'source-button';
 button2.innerHTML = modalInformation.button2;
 div13.appendChild(button2);
 
-const parentModal = document.querySelector('.modal')
+const parentModal = document.querySelector('.modal');
 const openModalButtons = document.querySelector('.btn');
 const closeModalButtons = document.querySelector('.close-button');
 const overlay = document.querySelector('#main');
 const openModalButtons2 = document.querySelector('.btn1');
-const openModalButtons3 = document.querySelector('.btn2')
-const openModalButtons4 = document.querySelector('.btn3')
-const openModalButtons5 = document.querySelector('.btn4')
-const openModalButtons6 = document.querySelector('.btn5')
-const openModalButtons7 = document.querySelector('.btn6')
+const openModalButtons3 = document.querySelector('.btn2');
+const openModalButtons4 = document.querySelector('.btn3');
+const openModalButtons5 = document.querySelector('.btn4');
+const openModalButtons6 = document.querySelector('.btn5');
+const openModalButtons7 = document.querySelector('.btn6');
 
-openModalButtons.addEventListener("click", appear);
-
-function appear() { 
+function appear() {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
+}
 
-} 
+openModalButtons.addEventListener('click', appear);
 
-closeModalButtons.addEventListener('click', disappear);
 function disappear() {
   parentModal.style.display = 'none';
   overlay.style.filter = 'blur(0px)';
 }
 
-parentModal.addEventListener('click', dissappearParent)
+closeModalButtons.addEventListener('click', disappear);
+
 function dissappearParent(e) {
-  if(e.target.className == '.modal'){
+  if (e.target.className === '.modal') {
     parentModal.style.display = 'none';
     overlay.style.filter = 'blur(0px)';
   }
 }
+parentModal.addEventListener('click', dissappearParent);
 
+function appearr() {
+  parentModal.style.display = 'block';
+  overlay.style.filter = 'blur(10px)';
+}
+
+function appearrr() {
+  parentModal.style.display = 'block';
+  overlay.style.filter = 'blur(10px)';
+}
+
+function appearrrr() {
+  parentModal.style.display = 'block';
+  overlay.style.filter = 'blur(10px)';
+}
+
+function appearrrrr() {
+  parentModal.style.display = 'block';
+  overlay.style.filter = 'blur(10px)';
+}
+
+function appearrrrrr() {
+  parentModal.style.display = 'block';
+  overlay.style.filter = 'blur(10px)';
+}
+
+function appearrrrrrr() {
+  parentModal.style.display = 'block';
+  overlay.style.filter = 'blur(10px)';
+}
+
+openModalButtons7.addEventListener('click', appearrrrrrr);
+openModalButtons5.addEventListener('click', appearrrrr);
+openModalButtons6.addEventListener('click', appearrrrrr);
+openModalButtons4.addEventListener('click', appearrrr);
+openModalButtons3.addEventListener('click', appearrr);
 openModalButtons2.addEventListener('click', appearr);
-
-function appearr (){
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
-}
-
-
-openModalButtons3.addEventListener('click', appearr);
-
-function appearr (){
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
-}
-
-openModalButtons4.addEventListener('click', appearr);
-
-function appearr (){
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
-}
-
-openModalButtons5.addEventListener('click', appearr);
-
-function appearr (){
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
-}
-
-openModalButtons6.addEventListener('click', appearr);
-
-function appearr (){
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
-}
-
-openModalButtons7.addEventListener('click', appearr);
-
-function appearr (){
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
-}
-
-
-
-
-
-// const tag = document.createElement('p');
-// const text = document.createTextNode('ok fine i lost');
-// tag.appendChild(text);
-// const element = document.getElementsByClassName('title');
-// element.appendChild(tag)
-// document.body.appendChild(element)
-
-// head.textContent = `none is my name`;
-//  head.oppendchild(textContent);
-//   document.querySelectorAll('.title').oppendchild(textContent);
-//   document.body.oppendChild(head);
-// const modalHead = document.querySelector('.modal-headm');
-// modalHead.textContent = `Multi Post Stories`;
-// modalHead.oppendChild(textContent);
-// document.body.oppendChild(modalHead);
-

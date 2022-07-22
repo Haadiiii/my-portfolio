@@ -188,7 +188,6 @@ nav {
   color: #f4f5f7;
   width: 80%;
   margin-right: 50px;
-
 }
 
 #container {
@@ -207,6 +206,7 @@ li {
   display: grid;
   grid-column: auto;
   justify-content: center;
+  transition: 2s;
 }
 
 .head {
@@ -278,11 +278,24 @@ li {
   font-weight: 500;
 }
 
+.modal-social li {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #8993a4;
+  margin: 0 5px;
+}
+
 #social li {
   box-sizing: border-box;
   padding: 10px 12px;
   border: 1px solid #8993a4;
   margin: 0 5px;
+}
+
+.modal-social a {
+  color: #091e42;
+  text-decoration: none;
 }
 
 #social a {
@@ -329,7 +342,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .modal {
@@ -347,12 +359,12 @@ li {
 }
 
 @keyframes drop {
-  0%{
+  0% {
     top: -100px;
-
   }
-  100%{
-  top: 50%;
+
+  100% {
+    top: 50%;
   }
 }
 
@@ -365,7 +377,7 @@ li {
   margin: 24px;
 }
 
-.modal-headd{
+.modal-headd {
   display: none;
 }
 
@@ -382,18 +394,14 @@ li {
 }
 
 @keyframes ease-in-out {
- 0% {
-
-  top: -100px;
-
+  0% {
+    top: -100px;
   }
 
- 100% {
-  top: 50%;
-
+  100% {
+    top: 50%;
   }
 }
-
 
 .modal-social {
   display: flex;
@@ -405,19 +413,6 @@ li {
   padding-left: 24px;
   font-weight: 600;
   margin-top: 25px;
-}
-
-.modal-social li {
-  box-sizing: border-box;
-  align-items: center;
-  padding: 10px 15px;
-  border: 1px solid #8993a4;
-  margin: 0 5px;
-}
-
-.modal-social a {
-  color: #091e42;
-  text-decoration: none;
 }
 
 .modal-pic {
@@ -440,9 +435,10 @@ li {
   margin-top: 250px;
 }
 
-.modal-mobile{
+.modal-mobile {
   margin-top: 30px;
 }
+
 .modal-desktop {
   display: none;
 }
@@ -462,7 +458,7 @@ li {
   background-color: #ff6b00;
   border-color: #ff6b00;
   background-repeat: no-repeat;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -476,7 +472,7 @@ li {
   background-color: #ff6b00;
   background-repeat: no-repeat;
   border-color: #ff6b00;
-  color: #ffffff;
+  color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -484,14 +480,7 @@ li {
   text-align: center;
   padding: 14px 15px;
   gap: 15px;
-
 }
-
-#main {
-  transition: 2s;
-}
-
-
 
 .live-button:hover {
   background-color: #322c21;
@@ -1172,7 +1161,6 @@ li {
   font-size: 20px;
   font-weight: 700;
   justify-content: center;
-
 }
 
 .form-contact {
@@ -1188,14 +1176,12 @@ li {
   flex-grow: 0;
   margin-top: 58px;
   justify-content: center;
-
 }
 
 #form-contact {
   padding-left: 50px;
   gap: 10px;
   justify-content: center;
-
 }
 
 .name {
@@ -1210,7 +1196,6 @@ li {
   border-right: 0;
   border-color: #dbd8d7;
   padding-left: 15px;
-  
 }
 
 .name::placeholder {
@@ -1353,7 +1338,7 @@ footer {
     width: 100%;
   }
 
-  #how{
+  #how {
     margin-left: 290px;
     width: 400px;
   }
@@ -1380,6 +1365,11 @@ footer {
     width: 1px;
     margin-top: 260px;
     margin-left: 16px;
+  }
+
+  .modal-social li {
+    font-size: 15px;
+    padding: 13px 20px;
   }
 
   #container li {
@@ -1474,6 +1464,7 @@ footer {
 
     /* width: 20%; */
   }
+
   .modal-header22 {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -1493,18 +1484,12 @@ footer {
     margin: -25px;
   }
 
-  .modal-headm{
+  .modal-headm {
     display: none;
   }
-  
 
   .modal-social {
     margin-top: -10px;
-  }
-
-  .modal-social li{
-    font-size: 15px;
-    padding: 13px 20px;
   }
 
   .modal-desktop {
@@ -1533,12 +1518,12 @@ footer {
   .close-button {
     cursor: pointer;
   }
+
   .live-button {
     background-color: #f55800;
     padding: 14px 10px 14px 19px;
     font-size: 15px;
     gap: 20px;
-
   }
 
   .source-button {
@@ -1571,7 +1556,6 @@ footer {
     color: #f87b33;
     border-color: #dbd8d7;
     cursor: pointer;
-
   }
 
   #twopro button:hover {
@@ -1586,7 +1570,6 @@ footer {
     color: #f87b33;
     border-color: #dbd8d7;
     cursor: pointer;
-
   }
 
   #fourpro button:hover {
@@ -1594,7 +1577,6 @@ footer {
     color: #f87b33;
     border-color: #dbd8d7;
     cursor: pointer;
-
   }
 
   #fivepro button:hover {
@@ -1602,7 +1584,6 @@ footer {
     color: #f87b33;
     border-color: #dbd8d7;
     cursor: pointer;
-
   }
 
   #sixpro button:hover {
@@ -1610,7 +1591,6 @@ footer {
     color: #f87b33;
     border-color: #dbd8d7;
     cursor: pointer;
-
   }
 
   #sixpic {
@@ -1640,16 +1620,16 @@ footer {
     cursor: pointer;
   }
 
-  #onepro:hover{
+  #onepro:hover {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 95% 100%;
+
     /* z-index: 2; */
     transition: none;
     transform: scale(1.07);
     cursor: pointer;
   }
-
 
   #twopro {
     display: none;
@@ -1662,14 +1642,12 @@ footer {
     cursor: pointer;
     font-size: 2px;
     background-color: #eb8c51;
-    
   }
 
   #threepro {
     display: none;
     cursor: pointer;
   }
-
 
   #three:hover #threepro {
     display: block;
@@ -1713,7 +1691,7 @@ footer {
     background-repeat: no-repeat;
   }
 
-  #two:hover{
+  #two:hover {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1729,8 +1707,6 @@ footer {
     font-size: 16px;
   }
 
- 
-
   #three {
     width: 326px;
     height: 410px;
@@ -1738,7 +1714,7 @@ footer {
     background-repeat: no-repeat;
   }
 
-  #three:hover{
+  #three:hover {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1761,7 +1737,7 @@ footer {
     margin-top: 60px;
   }
 
-  #four:hover{
+  #four:hover {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1785,7 +1761,7 @@ footer {
     margin-top: 80px;
   }
 
-  #five:hover{
+  #five:hover {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1801,7 +1777,6 @@ footer {
     font-size: 32px;
   }
 
-  
   #six {
     width: 326px;
     height: 390px;
@@ -1810,7 +1785,7 @@ footer {
     margin-top: 80px;
   }
 
-  #six:hover{
+  #six:hover {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1894,9 +1869,10 @@ footer {
     margin-top: 100px;
   }
 
-  #bulletfive{
+  #bulletfive {
     margin-right: 100px;
   }
+
   #bulletsix {
     margin-left: 120px;
   }
