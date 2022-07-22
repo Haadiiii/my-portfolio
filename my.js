@@ -213,3 +213,31 @@ form.addEventListener('click', (event) => {
     emailError.classList.remove('show-error');
   }, 2500);
 });
+
+// Store data in localStorage
+const firstName = document.getElementsByClassName('name');
+const message = document.getElementsByClassName('txt-area');
+const reset = document.getElementById('reset');
+
+changeHandler = () => {
+  const field = {
+    name: firstName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem("user", JSON.stringify(field));
+};
+
+const user = JSON.parse(localStorage.getItem("user"));
+email.value = user.email;
+fullName.value = user.name;
+message.value = user.message;
+
+const resetFrom = () => {
+  email.value = "";
+  fullName.value = "";
+  message.value = "";
+  localStorage.removeItem("user");
+};
+
+reset.addEventListener("click", resetFrom); 

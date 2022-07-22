@@ -1246,6 +1246,33 @@ li {
   padding-top: 24px;
   justify-content: center;
 }
+.form button:hover{
+  background-color: #fff5e1;
+  color: #f87b33;
+  /* border-color: #dbd8d7; */
+  cursor: pointer;
+}
+#reset{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  justify-content: center;
+  margin-left: 30px;
+  background-color:  #ff6b00;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+
+}
+
+#reset:hover{
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+  cursor: pointer;
+}
 
 .error {
   display: none;
