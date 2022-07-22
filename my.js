@@ -191,11 +191,7 @@ openModalButtons2.addEventListener('click', appearr);
 // Form javascript
 
 const form = document.getElementById('subit');
-const email = document.getElementsById('email');
-const emailError = document.getElementById('emailError');
-
-const form = document.getElementById('subit');
-const email = document.getElementsById('email');
+const email = document.getElementById('email');
 const emailError = document.getElementById('emailError');
 
 form.addEventListener('click', (event) => {

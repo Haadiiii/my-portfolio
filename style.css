@@ -23,6 +23,7 @@ nav {
   width: 567px;
 }
 
+
 .wel {
   padding-left: 20px;
   padding-top: 20px;
@@ -1246,20 +1247,12 @@ li {
 }
 .error {
   display: none;
-  background-color: red;
-  margin-top: 5px;
-  height: 50px;
-  width: 300px;
-  color: rgb(235, 242, 245);
-  border-radius: 10px;
-  justify-content: center;
-  /* align-items: center; */
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  position: absolute;
+  bottom: 12px;
+  left: 750px;
+  font-size: 14px;
+  color: red;
+  padding: 8px 8px;
 }
 
 .show-error {
