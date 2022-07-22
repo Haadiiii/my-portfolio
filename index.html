@@ -314,13 +314,15 @@
                                 <li><input type="text" class="name" maxlength="30" required name="name"
                                         placeholder="Full name">
                                 </li>
-                                <li><input type="email" class="email" name="email" required placeholder="Email Address">
+                                <li><input type="email" id="email" name="email" required placeholder="Email Address" onkeyup="validateEmail()">
                                 </li>
                                 <li><textarea class="txt-area" maxlength="500" name="txt-area" required id="txt-area"
                                         cols="30" rows="5" placeholder="Enter text here"></textarea></li>
                             </ul>
+                            
                             <div class="form">
-                                <button type="submit"> Get in touch</button>
+                                <button id="subit" type="submit" onclick="return validateForm()"> Get in touch</button>
+                                <span id="emailError" class="error"></span>
                             </div>
                         </form>
 

@@ -351,7 +351,11 @@ li {
   transform: translate(-50%, -50%);
   z-index: 10;
   background-color: #fff;
-  width: 70%;
+
+  /* overflow-y: scroll; */
+
+  /* padding: 5%; */
+  width: 60%;
   max-height: 90%;
   border: 1px solid #dfe1e6;
   animation: 1s drop;
@@ -409,10 +413,10 @@ li {
   align-items: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-size: 15px;
+  font-size: 13px;
   padding-left: 24px;
   font-weight: 600;
-  margin-top: 25px;
+  margin-top: -15px;
 }
 
 .modal-pic {
@@ -421,18 +425,18 @@ li {
   background-image: url(./images/SnapshootPortfolio.png);
   background-repeat: no-repeat;
   background-size: 90% 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 24px;
 }
 
 .modal-body {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
-  max-width: 330px;
+  max-width: 310px;
   line-height: 22px;
-  height: 10px;
+  height: 5px;
   color: #344563;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .modal-mobile {
@@ -449,7 +453,7 @@ li {
   gap: 40px;
   padding-top: 5px;
   max-width: 350px;
-  height: 550px;
+  height: 580px;
   margin-left: 24px;
   align-items: center;
 }
@@ -461,10 +465,10 @@ li {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   text-align: center;
-  padding: 14px 15px;
+  padding: 10px 13px;
   gap: 20px;
 }
 
@@ -475,10 +479,10 @@ li {
   color: #fff;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   text-align: center;
-  padding: 14px 15px;
+  padding: 10px 13px;
   gap: 15px;
 }
 
@@ -1202,7 +1206,7 @@ li {
   color: #979493;
 }
 
-.email {
+#email {
   width: 327px;
   margin-top: 24px;
   height: 48px;
@@ -1214,7 +1218,7 @@ li {
   padding-left: 15px;
 }
 
-.email::placeholder {
+#email::placeholder {
   color: #979493;
 }
 
@@ -1241,6 +1245,20 @@ li {
   align-items: center;
   padding-top: 24px;
   justify-content: center;
+}
+
+.error {
+  display: none;
+  position: absolute;
+  bottom: 12px;
+  left: 750px;
+  font-size: 14px;
+  color: red;
+  padding: 8px 8px;
+}
+
+.show-error {
+  display: flex;
 }
 
 #c-line {
@@ -1450,7 +1468,8 @@ footer {
   .modal {
     width: 1200px;
     max-width: 100%;
-    max-height: 90%;
+
+    /* max-height: 90%; */
   }
 
   .modal-pic {
@@ -1460,7 +1479,7 @@ footer {
     background-size: 55% 100%;
     height: 450px;
     margin-left: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
 
     /* width: 20%; */
   }
@@ -1503,7 +1522,8 @@ footer {
     font-size: 18px;
     line-height: 30px;
     margin-left: 680px;
-    margin-top: -250px;
+    margin-top: -160px;
+    height: 90%;
   }
 
   .modal-mobile {
@@ -1511,8 +1531,8 @@ footer {
   }
 
   .modal-button {
-    margin-left: 730px;
-    margin-top: -310px;
+    margin-left: 710px;
+    margin-top: -340px;
   }
 
   .close-button {
@@ -1900,7 +1920,7 @@ footer {
     width: 450px;
   }
 
-  .email {
+  #email {
     width: 450px;
   }
 
