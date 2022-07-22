@@ -20,7 +20,7 @@ nav {
   background-color: #3e3c3c;
   height: 50px;
   justify-content: space-between;
-  width: 100%;
+  width: 567px;
 }
 
 .wel {
@@ -74,8 +74,7 @@ nav {
 }
 
 .wel.active {
-  display: hidden;
-  visibility: hidden;
+  display: none;
 }
 
 #hidden {
@@ -107,7 +106,7 @@ nav {
   /* margin-top: 40px; */
   color: rgba(255, 245, 225, 1);
   font-family: 'inter', sans-serif;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 32px;
   line-height: 74px;
   margin-left: 40px;
@@ -138,6 +137,7 @@ nav {
   background-position: 100% 100%;
   padding: 0 24px;
   height: 950px;
+  width: 520px;
 }
 
 .non-good {
@@ -176,6 +176,7 @@ nav {
   display: flex;
   align-items: center;
   color: #fff;
+  margin-right: 180px;
 }
 
 #nice {
@@ -186,6 +187,7 @@ nav {
   line-height: 24px;
   color: #f4f5f7;
   width: 80%;
+  margin-right: 50px;
 }
 
 #container {
@@ -203,6 +205,8 @@ li {
   background-color: white;
   display: grid;
   grid-column: auto;
+  justify-content: center;
+  transition: 2s;
 }
 
 .head {
@@ -274,11 +278,24 @@ li {
   font-weight: 500;
 }
 
+.modal-social li {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #8993a4;
+  margin: 0 5px;
+}
+
 #social li {
   box-sizing: border-box;
   padding: 10px 12px;
   border: 1px solid #8993a4;
   margin: 0 5px;
+}
+
+.modal-social a {
+  color: #091e42;
+  text-decoration: none;
 }
 
 #social a {
@@ -321,9 +338,280 @@ li {
   padding: 10px 10px;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #fff;
+  width: 70%;
+  max-height: 90%;
+  border: 1px solid #dfe1e6;
+  animation: 1s drop;
+  display: none;
+}
+
+@keyframes drop {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 24px;
+}
+
+.modal-headd {
+  display: none;
+}
+
+.close-button {
+  cursor: pointer;
+  outline: none;
+  margin-right: 24px;
+  background-color: #fff;
+  border: none;
+  font-size: 30px;
+  transition: 200ms ease-in-out;
+  margin-bottom: 44px;
+  animation: 1s dropout;
+}
+
+@keyframes ease-in-out {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+.modal-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  padding-left: 24px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+.modal-pic {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/SnapshootPortfolio.png);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.modal-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  max-width: 330px;
+  line-height: 22px;
+  height: 10px;
+  color: #344563;
+  margin-top: 250px;
+}
+
+.modal-mobile {
+  margin-top: 30px;
+}
+
+.modal-desktop {
+  display: none;
+}
+
+.modal-button {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 5px;
+  max-width: 350px;
+  height: 550px;
+  margin-left: 24px;
+  align-items: center;
+}
+
+.live-button {
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  padding: 14px 15px;
+  gap: 20px;
+}
+
+.source-button {
+  background-color: #ff6b00;
+  background-repeat: no-repeat;
+  border-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  padding: 14px 15px;
+  gap: 15px;
+}
+
+.live-button:hover {
+  background-color: #322c21;
+  color: #fb6f2e;
+  border-color: #eee9e8;
+}
+
+.source-button:hover {
+  background-color: #2d2922;
+  color: #fb6f2e;
+  border-color: #eee9e8;
+}
+
+#onepro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#twopro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#threepro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#fourpro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#fivepro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#sixpro button {
+  width: 327px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+}
+
+#click button:hover {
+  background-color: #fff5e1;
+  color: #fb6f2e;
+  border-color: #eee9e8;
+}
+
+#onepro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#twopro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#threepro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#fourpro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#fivepro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
+#sixpro button:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+}
+
 #one {
   background-image: url(./images/new1.png);
-  margin-top: 24px;
+  position: relative;
+  bottom: 9px;
   margin-left: 24px;
   display: flex;
   flex-direction: column;
@@ -347,7 +635,7 @@ li {
 #onep {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -388,21 +676,11 @@ li {
   margin-top: 360px;
 }
 
-#onepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #two {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 15px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -425,7 +703,7 @@ li {
 #twop {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -460,21 +738,11 @@ li {
   background-color: #ff6b00;
 }
 
-#twopro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #three {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 30px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -497,7 +765,7 @@ li {
 #threep {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -532,21 +800,11 @@ li {
   background-color: #ff6b00;
 }
 
-#threepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #four {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 55px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -569,7 +827,7 @@ li {
 #fourp {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -604,21 +862,11 @@ li {
   background-color: #ff6b00;
 }
 
-#fourpro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #five {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 80px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -641,7 +889,7 @@ li {
 #fivep {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -676,21 +924,11 @@ li {
   background-color: #ff6b00;
 }
 
-#fivepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #six {
   background-image: url(./images/Placeholder.png);
   margin-top: 24px;
+  position: relative;
+  bottom: 90px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
@@ -713,7 +951,7 @@ li {
 #sixp {
   display: flex;
   font-family: 'Inter', sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
@@ -747,28 +985,16 @@ li {
   right: 0;
 }
 
-#sixpro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
 #about {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 375px;
-  top: 4053px;
+  position: relative;
+  width: 570px;
+  top: 2653px;
   background-color: #1c1a19;
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
-  background-position: 100% 23%;
+  background-position: 100% 20%;
 }
 
 #ahead {
@@ -829,7 +1055,7 @@ li {
 #bulletone {
   display: inline-flex;
   color: #fff;
-  padding-left: 86px;
+  padding-left: 180px;
   padding-top: 136px;
   font-size: 32px;
   text-align: center;
@@ -853,10 +1079,14 @@ li {
   margin-top: 10%;
 }
 
+#maintwo {
+  margin-top: -150px;
+}
+
 #bulletthree {
   display: inline-flex;
   color: #fff;
-  padding-left: 86px;
+  padding-left: 180px;
   padding-top: 44px;
   font-size: 32px;
   text-align: center;
@@ -883,7 +1113,7 @@ li {
 #bulletfive {
   display: inline-flex;
   color: #fff;
-  padding-left: 125px;
+  padding-left: 220px;
   padding-top: 44px;
   font-size: 32px;
   text-align: center;
@@ -910,10 +1140,12 @@ li {
 /* contact form start  */
 
 #maincontact {
-  position: absolute;
-  top: 6193px;
+  position: relative;
+  top: 2693px;
   background-color: #fff;
   display: grid;
+  justify-content: center;
+  margin-left: 70px;
 }
 
 .contact {
@@ -928,6 +1160,7 @@ li {
   padding-top: 120px;
   font-size: 20px;
   font-weight: 700;
+  justify-content: center;
 }
 
 .form-contact {
@@ -942,11 +1175,13 @@ li {
   order: 1;
   flex-grow: 0;
   margin-top: 58px;
+  justify-content: center;
 }
 
 #form-contact {
-  padding-left: 15px;
+  padding-left: 50px;
   gap: 10px;
+  justify-content: center;
 }
 
 .name {
@@ -1024,6 +1259,13 @@ li {
 footer {
   position: absolute;
   top: 6968px;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+#twopro:hover {
+  background-color: #eb8c51;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -1096,6 +1338,11 @@ footer {
     width: 100%;
   }
 
+  #how {
+    margin-left: 290px;
+    width: 400px;
+  }
+
   .why {
     padding-left: 143px;
     padding-top: 192px;
@@ -1107,7 +1354,7 @@ footer {
   }
 
   #nice {
-    margin-left: 165px;
+    margin-left: 205px;
   }
 
   #container {
@@ -1118,6 +1365,11 @@ footer {
     width: 1px;
     margin-top: 260px;
     margin-left: 16px;
+  }
+
+  .modal-social li {
+    font-size: 15px;
+    padding: 13px 20px;
   }
 
   #container li {
@@ -1191,16 +1443,161 @@ footer {
 
   #bullettwo li:hover {
     background-color: #f46106;
-    transition: 0.3s;
     cursor: pointer;
     border-radius: 10rem;
+  }
+
+  .modal {
+    width: 1200px;
+    max-width: 100%;
+    max-height: 90%;
+  }
+
+  .modal-pic {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-size: 55% 100%;
+    height: 450px;
+    margin-left: 30px;
+    margin-top: 60px;
+
+    /* width: 20%; */
+  }
+
+  .modal-header22 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #172b4d;
+    margin: 24px;
+  }
+
+  .modal-headd {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #172b4d;
+    margin: -25px;
+  }
+
+  .modal-headm {
+    display: none;
+  }
+
+  .modal-social {
+    margin-top: -10px;
+  }
+
+  .modal-desktop {
+    display: flex;
+
+    /* position: absolute; */
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    width: 400px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 680px;
+    margin-top: -250px;
+  }
+
+  .modal-mobile {
+    display: none;
+  }
+
+  .modal-button {
+    margin-left: 730px;
+    margin-top: -310px;
+  }
+
+  .close-button {
+    cursor: pointer;
+  }
+
+  .live-button {
+    background-color: #f55800;
+    padding: 14px 10px 14px 19px;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .source-button {
+    background-color: #f55800;
+    padding: 14px 10px 14px 19px;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .live-button:hover {
+    background-color: #322c21;
+    color: #fb6f2e;
+    border-color: #eee9e8;
+  }
+
+  .source-button:hover {
+    background-color: #2d2922;
+    color: #fb6f2e;
+    border-color: #eee9e8;
+  }
+
+  #click button:hover {
+    background-color: #fff5e1;
+    color: #fb6f2e;
+    border-color: #eee9e8;
+  }
+
+  #onepro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+    cursor: pointer;
+  }
+
+  #twopro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+    cursor: pointer;
+  }
+
+  #threepro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+    cursor: pointer;
+  }
+
+  #fourpro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+    cursor: pointer;
+  }
+
+  #fivepro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+    cursor: pointer;
+  }
+
+  #sixpro button:hover {
+    background-color: #fff5e1;
+    color: #f87b33;
+    border-color: #dbd8d7;
+    cursor: pointer;
   }
 
   #sixpic {
     display: grid;
     grid-column-gap: 140px;
     grid-template-columns: repeat(3, 250px);
-    grid-auto-rows: 450px;
+    grid-auto-rows: 480px;
     justify-content: center;
     height: 435px;
     width: 100%;
@@ -1209,14 +1606,82 @@ footer {
   #one {
     width: 100%;
     height: 400px;
+    margin-top: 85px;
+    cursor: pointer;
   }
 
   #onepro {
     background-image: url(./images/new1.png);
     display: flex;
+    z-index: 2;
     flex-direction: column;
     background-repeat: no-repeat;
     margin-top: 360px;
+    cursor: pointer;
+  }
+
+  #onepro:hover {
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-repeat: no-repeat;
+    background-size: 95% 100%;
+
+    /* z-index: 2; */
+    transition: none;
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+
+  #twopro {
+    display: none;
+    cursor: pointer;
+    background-color: #eb8c51;
+  }
+
+  #two:hover #twopro {
+    display: block;
+    cursor: pointer;
+    font-size: 2px;
+    background-color: #eb8c51;
+  }
+
+  #threepro {
+    display: none;
+    cursor: pointer;
+  }
+
+  #three:hover #threepro {
+    display: block;
+    cursor: pointer;
+  }
+
+  #fourpro {
+    display: none;
+    cursor: pointer;
+  }
+
+  #four:hover #fourpro {
+    display: block;
+    cursor: pointer;
+  }
+
+  #fivepro {
+    display: none;
+    cursor: pointer;
+  }
+
+  #five:hover #fivepro {
+    display: block;
+    cursor: pointer;
+  }
+
+  #sixpro {
+    display: none;
+    cursor: pointer;
+  }
+
+  #six:hover #sixpro {
+    display: block;
+    cursor: pointer;
   }
 
   #two {
@@ -1224,6 +1689,15 @@ footer {
     height: 410px;
     background-image: url(./images/new2.png);
     background-repeat: no-repeat;
+  }
+
+  #two:hover {
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: none;
+    transform: scale(1.07);
+    cursor: pointer;
   }
 
   #twom {
@@ -1240,6 +1714,16 @@ footer {
     background-repeat: no-repeat;
   }
 
+  #three:hover {
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    transition: none;
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+
   #threem {
     margin-top: 145px;
     font-family: 'Crete Round', serif;
@@ -1250,6 +1734,16 @@ footer {
   #four {
     width: 326px;
     height: 410px;
+    margin-top: 60px;
+  }
+
+  #four:hover {
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: none;
+    transform: scale(1.07);
+    cursor: pointer;
   }
 
   #fourm {
@@ -1264,6 +1758,16 @@ footer {
     height: 390px;
     background-image: url(./images/new2.png);
     background-repeat: no-repeat;
+    margin-top: 80px;
+  }
+
+  #five:hover {
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: none;
+    transform: scale(1.07);
+    cursor: pointer;
   }
 
   #fivem {
@@ -1278,6 +1782,16 @@ footer {
     height: 390px;
     background-image: url(./images/new3.png);
     background-repeat: no-repeat;
+    margin-top: 80px;
+  }
+
+  #six:hover {
+    background-image: url(./images/SnapshootPortfolio2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: none;
+    transform: scale(1.07);
+    cursor: pointer;
   }
 
   #sixm {
@@ -1355,6 +1869,10 @@ footer {
     margin-top: 100px;
   }
 
+  #bulletfive {
+    margin-right: 100px;
+  }
+
   #bulletsix {
     margin-left: 120px;
   }
@@ -1362,7 +1880,7 @@ footer {
   #maincontact {
     display: flex;
     flex-direction: row;
-    top: 3800px;
+    top: 2500px;
     width: 100%;
     justify-content: center;
   }
