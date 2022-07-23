@@ -300,48 +300,49 @@
         </div>
 
     </section>
-
+    <!-- ===========Form Section========= -->
     <section>
 
-                <div id="maincontact">
-                    <div class="contact">
-                        <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in
-                            touch.</h2>
-                    </div>
-                    <div class="form-contact">
-                        <form action="https://formspree.io/f/mjvlqygj" method="post">
-                            <ul id="form-contact">
-                                <li><input type="text" class="name" maxlength="30" required name="name"
-                                        placeholder="Full name">
-                                </li>
-                                <li><input type="email" id="email" name="email" required placeholder="Email Address">
-                                </li>
-                                <li><textarea class="txt-area" maxlength="500" name="txt-area" required id="txt-area"
-                                        cols="30" rows="5" placeholder="Enter text here"></textarea></li>
-                            </ul>
-                            <div class="form">
-                                <button id="subit" type="submit"> Get in touch</button>
-                                <span id="emailError" class="error">error is find now check again</span>
-                            </div>
-                        </form>
+        <div id="maincontact">
+            <div class="contact">
+                <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in
+                    touch.</h2>
+            </div>
 
+            <div class="form-contact">
+                <form action="https://formspree.io/f/mjvlqygj" method="post">
+                    <ul id="form-contact">
+                        <li><input type="text" name="name" id="name" onchange="changeHandler()" maxlength="30" required  placeholder="Full name">
+                        </li>
+                        <li><input type="email" name="email" id="email" onchange="changeHandler()"  required placeholder="Email Address">
+                        </li>
+                        <li><textarea name="txt-area" id="txt-area"  onchange="changeHandler()" class="txt-area" maxlength="500" required  cols="30"
+                                rows="5" placeholder="Enter text here"></textarea></li>
+                    </ul>
+                    <div class="form">
+                        <button id="subit" type="submit"> Get in touch</button>
+                        <span id="emailError" class="error">error is find now check again</span>
+                        <button class="btn" id="reset" type="reset">Reset</button>
                     </div>
+                </form>
+
+            </div>
 
 
-                </div>
-                <footer>
+        </div>
+        <footer>
 
-                    <div id="c-line">
-                        <div id="footer"></div>
-                    </div>
-                    <div id="s-icons">
-                        <img src="/images/social-media-icon.png" alt="Social Media Icon">
-                    </div>
-                    <div class="l-line">
-                        <img src="/images/light.png" alt="Horizontal Line">
-                    </div>
+            <div id="c-line">
+                <div id="footer"></div>
+            </div>
+            <div id="s-icons">
+                <img src="/images/social-media-icon.png" alt="Social Media Icon">
+            </div>
+            <div class="l-line">
+                <img src="/images/light.png" alt="Horizontal Line">
+            </div>
 
-                </footer>
+        </footer>
 
 
 

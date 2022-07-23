@@ -187,15 +187,10 @@ openModalButtons4.addEventListener('click', appearrrr);
 openModalButtons3.addEventListener('click', appearrr);
 openModalButtons2.addEventListener('click', appearr);
 
-
 // Form javascript
 
 const form = document.getElementById('subit');
-const email = document.getElementsById('email');
-const emailError = document.getElementById('emailError');
-
-const form = document.getElementById('subit');
-const email = document.getElementsById('email');
+const email = document.getElementById('email');
 const emailError = document.getElementById('emailError');
 
 form.addEventListener('click', (event) => {
@@ -219,29 +214,31 @@ form.addEventListener('click', (event) => {
   }, 2500);
 });
 
-// irrelevant infor below 
+// Store data in localStorage
 
-const form = document.getElementById('subit');
-const email = document.getElementsById('email');
-const emailError = document.getElementById('emailError');
+const fullName = document.getElementById('name');
+const message = document.getElementById('txt-area');
+const reset = document.getElementById('reset');
 
-form.addEventListener('click', (event) => {
-  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
-  const str = email.value;
-  if (str === str.toLowerCase()) {
-    if (regex.test(str)) {
-      emailError.classList.remove('show-error');
-    } else {
-      event.preventDefault();
-      emailError.classList.add('show-error');
-      emailError.textContent = 'You entered an invalid email';
-    }
-  } else {
-    event.preventDefault();
-    emailError.classList.add('show-error');
-    emailError.innerHTML = 'Email must be typed in lowercase';
-  }
-  setTimeout(() => {
-    emailError.classList.remove('show-error');
-  }, 2500);
-});
+function changeHandler() {
+  const field = {
+    name: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('user', JSON.stringify(field));
+}
+
+const user = JSON.parse(localStorage.getItem('user'));
+email.value = user.email;
+fullName.value = user.name;
+message.value = user.message;
+
+const resetFrom = () => {
+  email.value = '';
+  fullName.value = '';
+  message.value = '';
+  localStorage.removeItem('user');
+};
+fullName.addEventListener('onchange', changeHandler);
+reset.addEventListener('click', resetFrom);

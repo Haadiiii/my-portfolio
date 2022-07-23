@@ -351,7 +351,9 @@ li {
   transform: translate(-50%, -50%);
   z-index: 10;
   background-color: #fff;
+
   /* overflow-y: scroll; */
+
   /* padding: 5%; */
   width: 60%;
   max-height: 90%;
@@ -1186,7 +1188,7 @@ li {
   justify-content: center;
 }
 
-.name {
+#name {
   width: 327px;
   height: 48px;
   flex: none;
@@ -1200,7 +1202,7 @@ li {
   padding-left: 15px;
 }
 
-.name::placeholder {
+#name::placeholder {
   color: #979493;
 }
 
@@ -1220,7 +1222,7 @@ li {
   color: #979493;
 }
 
-.txt-area {
+#txt-area {
   width: 327px;
   margin-top: 24px;
   border: none;
@@ -1232,7 +1234,7 @@ li {
   padding-left: 15px;
 }
 
-.txt-area::placeholder {
+#txt-area::placeholder {
   color: #3c3a39;
   font-weight: 400;
 }
@@ -1244,22 +1246,23 @@ li {
   padding-top: 24px;
   justify-content: center;
 }
+
 .error {
   display: none;
-  background-color: red;
-  margin-top: 5px;
-  height: 50px;
-  width: 300px;
-  color: rgb(235, 242, 245);
-  border-radius: 10px;
+  position: absolute;
+  bottom: 12px;
+  left: 650px;
+  font-size: 14px;
+  color: red;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 24px;
   justify-content: center;
-  /* align-items: center; */
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  margin-left: 30px;
 }
 
 .show-error {
@@ -1473,6 +1476,7 @@ footer {
   .modal {
     width: 1200px;
     max-width: 100%;
+
     /* max-height: 90%; */
   }
 
@@ -1920,7 +1924,7 @@ footer {
     margin-left: 100px;
   }
 
-  .name {
+  #name {
     width: 450px;
   }
 
@@ -1928,13 +1932,35 @@ footer {
     width: 450px;
   }
 
-  .txt-area {
+  #txt-area {
     width: 450px;
     height: 100px;
   }
 
   .form {
     margin-left: 20px;
+  }
+
+  .error {
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    left: 650px;
+    font-size: 14px;
+    color: red;
+  }
+
+  .show-error {
+    display: flex;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 24px;
+    justify-content: center;
+    margin-left: 30px;
   }
 
   footer {
