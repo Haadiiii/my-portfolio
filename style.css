@@ -1263,6 +1263,11 @@ li {
   padding-top: 24px;
   justify-content: center;
   margin-left: 30px;
+=======
+  left: 750px;
+  font-size: 14px;
+  color: red;
+  padding: 8px 8px;
 }
 
 .show-error {
