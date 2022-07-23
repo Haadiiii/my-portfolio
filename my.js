@@ -233,12 +233,3 @@ const user = JSON.parse(localStorage.getItem('user'));
 email.value = user.email;
 fullName.value = user.name;
 message.value = user.message;
-
-const resetFrom = () => {
-  email.value = '';
-  fullName.value = '';
-  message.value = '';
-  localStorage.removeItem('user');
-};
-fullName.addEventListener('onchange', changeHandler);
-reset.addEventListener('click', resetFrom);
