@@ -311,21 +311,20 @@
                     <div class="form-contact">
                         <form action="https://formspree.io/f/mjvlqygj" method="post">
                             <ul id="form-contact">
-                                <li><input type="text" name="name" class="name" onchange="changeHandler()" maxlength="30" required 
+                                <li><input type="text" name="name" id="name" onchange="changeHandler()" maxlength="30" required 
                                         placeholder="Full name">
                                 </li>
-                                <li><input type="email" name="email" id="email"  onchange="changeHandler()" required placeholder="Email Address" onkeyup="validateEmail()">
+                                <li><input type="email" name="email" id="email" onchange="changeHandler()" required placeholder="Email Address" onkeyup="validateEmail()">
                                 </li>
-                                <li><textarea class="txt-area" maxlength="500" name="txt-area" required id="txt-area" onchange="changeHandler()"
+                                <li><textarea class="txt-area" name="txt-area" id="txt-area" onchange="changeHandler()" maxlength="500"  required  
                                         cols="30" rows="5" placeholder="Enter text here"></textarea></li>
                             </ul>
                             
                             <div class="form">
                                 <button id="subit" type="submit" onclick="return validateForm()"> Get in touch</button>
                                 <span id="emailError" class="error"></span>
-                                <div>
-                                <button class="btn-primary" id="reset">Reset</button>
-                            </div>
+                                <button class="btnx" id="reset" type="reset">Reset</button>
+                            
                             </div>
                         </form>
 

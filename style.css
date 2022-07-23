@@ -324,6 +324,9 @@ li {
 
 .form button:hover {
   transition: 0.3s;
+  background-color: #fff5e1;
+  color: #f87b33;
+  cursor: pointer;
 }
 
 #click button {
@@ -1188,7 +1191,7 @@ li {
   justify-content: center;
 }
 
-.name {
+#name {
   width: 327px;
   height: 48px;
   flex: none;
@@ -1202,7 +1205,7 @@ li {
   padding-left: 15px;
 }
 
-.name::placeholder {
+#name::placeholder {
   color: #979493;
 }
 
@@ -1246,28 +1249,22 @@ li {
   padding-top: 24px;
   justify-content: center;
 }
-.form button:hover{
-  background-color: #fff5e1;
-  color: #f87b33;
-  /* border-color: #dbd8d7; */
-  cursor: pointer;
-}
-#reset{
+
+.btnx {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   justify-content: center;
   margin-left: 30px;
-  background-color:  #ff6b00;
+  background-color: #ff6b00;
   border: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   font-weight: 700;
-
 }
 
-#reset:hover{
+.btnx:hover {
   background-color: #fff5e1;
   color: #f87b33;
   border-color: #dbd8d7;
@@ -1943,7 +1940,7 @@ footer {
     margin-left: 100px;
   }
 
-  .name {
+  #name {
     width: 450px;
   }
 

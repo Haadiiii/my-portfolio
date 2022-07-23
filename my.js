@@ -215,29 +215,29 @@ form.addEventListener('click', (event) => {
 });
 
 // Store data in localStorage
-const firstName = document.getElementsByClassName('name');
-const message = document.getElementsByClassName('txt-area');
+
+const fullName = document.getElementById('name');
+const message = document.getElementById('txt-area');
 const reset = document.getElementById('reset');
 
-changeHandler = () => {
+function changeHandler() {
   const field = {
-    name: firstName.value,
+    name: fullName.value,
     email: email.value,
     message: message.value,
   };
-  localStorage.setItem("user", JSON.stringify(field));
-};
-
-const user = JSON.parse(localStorage.getItem("user"));
+  localStorage.setItem('user', JSON.stringify(field));
+}
+const user = JSON.parse(localStorage.getItem('user'));
 email.value = user.email;
 fullName.value = user.name;
 message.value = user.message;
 
-const resetFrom = () => {
-  email.value = "";
-  fullName.value = "";
-  message.value = "";
-  localStorage.removeItem("user");
-};
-
-reset.addEventListener("click", resetFrom); 
+function resetFrom() {
+  email.value = '';
+  fullName.value = '';
+  message.value = '';
+  localStorage.removeItem('user');
+}
+fullName.addEventListener('onchange', changeHandler);
+reset.addEventListener('click', resetFrom);
