@@ -1256,18 +1256,25 @@ li {
   color: red;
 }
 
-.btn {
+.btnx {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 24px;
+  padding: 12px;
   justify-content: center;
   margin-left: 30px;
-=======
-  left: 750px;
-  font-size: 14px;
-  color: red;
-  padding: 8px 8px;
+  background-color: #ff6b00;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.btnx:hover {
+  background-color: #fff5e1;
+  color: #f87b33;
+  border-color: #dbd8d7;
+  cursor: pointer;
 }
 
 .show-error {
