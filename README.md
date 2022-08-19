@@ -3,7 +3,23 @@
 # Portfolio-project
 
 
-- A mobile portfolio page showcasing my projects and skills
+## description
+This is a single-page portfolio website with a header, work section, about section, and contact section which was parsed from Microverse Figma Template 1. The webpage is responsive and can be used on different screens. The contact section and all animation effects the portfolio was done by all the three authors listed below as contributing authors. This project was made with HTML, CSS and javascript linters and proper Github Flow was used. Javascript was used to toggle the mobile menu. The Personal-portfolio website has been deployed using github pages, the link is below.
+
+## Objectives
+
+Understand how to create UIs adaptable to different screen sizes using media queries.
+Understand how to parse a Figma design to create a UI
+Use of flexbox to place elements in the page
+use of images and background to enhance the appearance
+Prepare a repository for development using linters
+Ensure there are no linter errors
+Use of meaningful commit messages
+Descriptive README files
+Descriptive pull request title and a summary explaining changes inside
+Branch names should describe actions taken
+Follow best practices for HTML and CSS
+Deploy the website online using github pages
 
 
 ## Built With
