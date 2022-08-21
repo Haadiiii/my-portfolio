@@ -1430,13 +1430,13 @@ footer {
     margin-left: 16px;
   }
 
-  .hover{
+  .hover {
     cursor: pointer;
   }
 
-  .hover:hover{
-      transition: 1s;
-      transform:scale(1.5);
+  .hover:hover {
+    transition: 1s;
+    transform: scale(1.5);
   }
 
   .modal-social li {
