@@ -119,7 +119,8 @@ div13.appendChild(button2);
 
 const parentModal = document.querySelector('.modal');
 const openModalButtons = document.querySelector('.btn');
-const closeModalButtons = document.querySelector('.close-button');
+const closeModalButtons = document.querySelector('#close-btn-new');
+const closeModalButton = document.querySelector('.close-button');
 const overlay = document.querySelector('#main');
 const openModalButtons2 = document.querySelector('.btn1');
 const openModalButtons3 = document.querySelector('.btn2');
@@ -127,20 +128,26 @@ const openModalButtons4 = document.querySelector('.btn3');
 const openModalButtons5 = document.querySelector('.btn4');
 const openModalButtons6 = document.querySelector('.btn5');
 const openModalButtons7 = document.querySelector('.btn6');
+const sixPic = document.getElementById('sixpic')
 
 function appear() {
-  parentModal.style.display = 'block';
-  overlay.style.filter = 'blur(10px)';
+  sixPic.style.display = 'grid';
+  // overlay.style.filter = 'blur(10px)';
 }
 
 openModalButtons.addEventListener('click', appear);
 
 function disappear() {
+  sixPic.style.display = 'none';
+  overlay.style.filter = 'blur(0px)';
+}
+function disappear2() {
   parentModal.style.display = 'none';
   overlay.style.filter = 'blur(0px)';
 }
 
 closeModalButtons.addEventListener('click', disappear);
+closeModalButton.addEventListener('click', disappear2);
 
 function dissappearParent(e) {
   if (e.target.className === '.modal') {

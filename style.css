@@ -85,8 +85,6 @@ nav {
   flex-direction: column;
   background-color: #3e3c3c;
   width: 100%;
-
-  /* text-align: center; */
   justify-content: center;
   align-items: flex-start;
   transition: 0.3s;
@@ -124,6 +122,10 @@ nav {
 
 #hidden :hover {
   color: #eb8c51;
+}
+
+.main-menu {
+  display: none;
 }
 
 .good {
@@ -351,10 +353,6 @@ li {
   transform: translate(-50%, -50%);
   z-index: 10;
   background-color: #fff;
-
-  /* overflow-y: scroll; */
-
-  /* padding: 5%; */
   width: 60%;
   max-height: 90%;
   border: 1px solid #dfe1e6;
@@ -1309,7 +1307,6 @@ footer {
 @media (min-width: 768px) {
   body {
     position: relative;
-    height: 4561px;
   }
 
   nav {
@@ -1356,6 +1353,7 @@ footer {
   }
 
   .main-menu {
+    display: block;
     margin-top: 2rem;
   }
 
@@ -1668,19 +1666,41 @@ footer {
   }
 
   #sixpic {
-    display: grid;
+    display: none;
     grid-column-gap: 140px;
     grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 320px);
     grid-auto-rows: 480px;
     justify-content: center;
-    height: 435px;
+    height: 900px;
     width: 100%;
+    position: fixed;
+    flex-direction: column;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 60px;
+    margin-left: 5rem;
+    padding-top: 7rem;
+    z-index: 10;
+    margin-top: -10rem;
+    box-shadow: 10px 10px 10px 10px #e8e8e8;
+  }
+
+  #close-btn-new {
+    position: absolute;
+    right: -700px;
+    z-index: 10;
+    margin-top: -5rem;
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 800;
   }
 
   #one {
-    width: 100%;
+    width: 163%;
     height: 400px;
-    margin-top: 85px;
+    margin-top: 20px;
     cursor: pointer;
   }
 
@@ -1698,8 +1718,6 @@ footer {
     background-image: url(./images/SnapshootPortfolio2.png);
     background-repeat: no-repeat;
     background-size: 95% 100%;
-
-    /* z-index: 2; */
     transition: none;
     transform: scale(1.07);
     cursor: pointer;
@@ -1915,11 +1933,12 @@ footer {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 2557px;
+    top: 2030px;
     background-color: #1c1a19;
     background-image: url(./images/Fbackground.png);
     background-repeat: no-repeat;
     background-position: 100% 65%;
+    z-index: 0;
   }
 
   #ahead {
@@ -1989,7 +2008,7 @@ footer {
   #maincontact {
     display: flex;
     flex-direction: row;
-    top: 2500px;
+    top: 2238px;
     width: 90%;
     justify-content: center;
   }
@@ -2047,7 +2066,7 @@ footer {
   footer {
     position: absolute;
     width: 80%;
-    top: 4368px;
+    top: 4100px;
     justify-content: center;
   }
 
