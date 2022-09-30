@@ -1668,7 +1668,6 @@ footer {
   #sixpic {
     display: none;
     grid-column-gap: 140px;
-    grid-template-columns: repeat(3, 200px);
     grid-template-columns: repeat(3, 320px);
     grid-auto-rows: 480px;
     justify-content: center;
