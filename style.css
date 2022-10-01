@@ -2067,7 +2067,7 @@ footer {
     position: absolute;
     width: 80%;
     top: 4100px;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   #s-icons {
