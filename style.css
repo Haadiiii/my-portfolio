@@ -20,7 +20,6 @@ nav {
   background-color: #3e3c3c;
   height: 50px;
   justify-content: space-between;
-  width: 567px;
 }
 
 .wel {
@@ -139,7 +138,6 @@ nav {
   background-position: 100% 100%;
   padding: 0 24px;
   height: 950px;
-  width: 520px;
 }
 
 .non-good {
@@ -209,6 +207,7 @@ li {
   grid-column: auto;
   justify-content: center;
   transition: 2s;
+  margin-bottom: 5rem;
 }
 
 .head {
@@ -236,7 +235,6 @@ li {
   display: grid;
   column-gap: 24px;
   width: 327px;
-  height: 237px;
 }
 
 #project1 img {
@@ -990,9 +988,6 @@ li {
 #about {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 570px;
-  top: 2653px;
   background-color: #1c1a19;
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
@@ -1142,8 +1137,6 @@ li {
 /* contact form start  */
 
 #maincontact {
-  position: relative;
-  top: 2693px;
   background-color: #fff;
   display: grid;
   justify-content: center;
@@ -1282,9 +1275,9 @@ li {
 #c-line {
   height: 1px;
   margin-top: 120px;
-  align-items: center;
   color: white;
   background-color: #dfe1e6;
+  margin-left: -5rem;
 }
 
 #s-icons {
@@ -1293,8 +1286,6 @@ li {
 }
 
 footer {
-  position: absolute;
-  top: 6968px;
   justify-content: center;
   margin-left: 80px;
 }
@@ -1310,7 +1301,7 @@ footer {
   }
 
   nav {
-    position: absolute;
+    position: fixed;
     height: 72px;
     left: 0;
     top: 0;
@@ -1396,7 +1387,6 @@ footer {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 100% 70%;
-    width: 96%;
   }
 
   #how {
@@ -1480,9 +1470,6 @@ footer {
   }
 
   #projectheader {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     padding-top: 100px;
   }
 
@@ -1669,32 +1656,30 @@ footer {
   #sixpic {
     display: none;
     grid-column-gap: 140px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 480px;
     justify-content: center;
-    height: 900px;
+    grid-template-columns: repeat(3, 304px);
     width: 100%;
-    /* position: fixed; */
-    flex-direction: column;
-    background-color: white;
+    background-color: #9f5353;
     transition: 0.3s;
     border-radius: 60px;
+    margin-top: -40rem;
     margin-left: 5rem;
     padding-top: 7rem;
     z-index: 10;
-    margin-top: -40rem;
-    box-shadow: 10px 10px 10px 10px #e8e8e8;
+    box-shadow: 10px 10px 10px 10px #745858;
   }
 
   #close-btn-new {
     position: absolute;
-    right: -700px;
+    right: -787px;
     z-index: 10;
-    margin-top: -5rem;
-    background-color: white;
+    margin-top: -6rem;
+    background-color: #a14d4d;
     border: none;
-    font-size: 24px;
     font-weight: 800;
+    color: white;
+    font-family: cursive;
+    font-size: 32px;
   }
 
   #one {
@@ -1931,13 +1916,11 @@ footer {
   #about {
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 100%;
-    top: 2030px;
     background-color: #1c1a19;
     background-image: url(./images/Fbackground.png);
     background-repeat: no-repeat;
-    background-position: 100% 65%;
+    background-position: 100% 35%;
     z-index: 0;
   }
 
@@ -1955,7 +1938,6 @@ footer {
   }
 
   #aline {
-    width: 100%;
     background-color: rgb(204, 195, 195);
   }
 
@@ -1969,10 +1951,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     gap: 94px;
-    position: absolute;
     width: 100%;
-    height: 596px;
-    top: 643px;
     background-color: #1c1a19;
     justify-content: center;
   }
@@ -2008,8 +1987,6 @@ footer {
   #maincontact {
     display: flex;
     flex-direction: row;
-    top: 2238px;
-    width: 90%;
     justify-content: center;
   }
 
@@ -2061,13 +2038,6 @@ footer {
     padding-top: 24px;
     justify-content: center;
     margin-left: 30px;
-  }
-
-  footer {
-    position: absolute;
-    width: 80%;
-    top: 4100px;
-    /* justify-content: center; */
   }
 
   #s-icons {
