@@ -26,98 +26,49 @@ const modalInformation = {
   description2:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   imageSrc: './images/todolist.png',
-  button1: 'See Live  <img src="./images/icon.png">',
-  button2: 'See Source <img src="./images/vector.png">',
+  button1: 'See Live ',
+  button2: 'See Source ',
   li: 'html',
   li2: 'Bootstrap',
   li3: 'Ruby on rails',
 };
 
-const div1 = document.createElement('div');
-div1.className = 'modal';
-document.body.appendChild(div1);
+const mainModal = document.querySelector('.main-modal');
 
-const div = document.createElement('div');
-div.className = 'modal-header';
-div1.appendChild(div);
+mainModal.innerHTML = `
+  <div class="modal">
+    <div class="modal-header">
+      <div class="title">
+          <h2 class="modal-headm">${modalInformation.heading1}</h2>
+          <div class="modal-header22">
+            <h2 class = "modal-headd">${modalInformation.title2}</h2>
+          </div>
+      </div>
+      <span class="close-button">&times;</span>
+    </div>
+    <div class="modal-tags">
+      <ul class ="modal-social">
+        <li class = "tags1">${modalInformation.li}</li>
+        <li class = "tags2">${modalInformation.li2}</li>
+        <li class = "tag3">${modalInformation.li3}</li>
+      </ul>
+    </div>
 
-const div2 = document.createElement('div');
-div2.className = 'title';
-div.appendChild(div2);
+      <div class="modal-pic">
+        <div class="modal-body">
+        <p class ="modal-mobile">${modalInformation.description2}</p>
+        <p class ="modal-desktop">${modalInformation.description}</p>
+        </div>
+      </div>
 
-const h2 = document.createElement('h1');
-h2.className = 'modal-headm';
-h2.textContent = modalInformation.heading1;
-div2.appendChild(h2);
+      <div class="modal-button">
+          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
+          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+      </div>
+      
+  </div>
 
-const h20 = document.createElement('div');
-h20.className = 'modal-header22';
-div2.appendChild(h20);
-
-const h22 = document.createElement('h1');
-h22.className = 'modal-headd';
-h22.textContent = modalInformation.title2;
-h20.appendChild(h22);
-
-const span = document.createElement('button');
-span.className = 'close-button';
-span.innerHTML = '&times;';
-div.appendChild(span);
-
-const div3 = document.createElement('div');
-div3.className = 'modal-tags';
-div1.appendChild(div3);
-
-const ul = document.createElement('ul');
-ul.className = 'modal-social';
-div3.appendChild(ul);
-
-const li = document.createElement('li');
-li.className = 'tags1';
-li.innerHTML = modalInformation.li;
-ul.appendChild(li);
-
-const li2 = document.createElement('li');
-li2.className = 'tags2';
-li2.innerHTML = modalInformation.li2;
-ul.appendChild(li2);
-
-const li3 = document.createElement('li');
-li3.className = 'tags3';
-li3.innerHTML = modalInformation.li3;
-ul.appendChild(li3);
-
-const div4 = document.createElement('div');
-div4.className = 'modal-pic';
-div1.appendChild(div4);
-
-const div12 = document.createElement('div');
-div12.className = 'modal-body';
-div4.appendChild(div12);
-
-const p = document.createElement('p');
-p.className = 'modal-mobile';
-p.textContent = modalInformation.description2;
-div12.appendChild(p);
-
-const p2 = document.createElement('p');
-p2.className = 'modal-desktop';
-p2.textContent = modalInformation.description;
-div12.appendChild(p2);
-
-const div13 = document.createElement('div');
-div13.className = 'modal-button';
-div1.appendChild(div13);
-
-const button = document.createElement('button');
-button.className = 'live-button';
-button.innerHTML = modalInformation.button1;
-div13.appendChild(button);
-
-const button2 = document.createElement('button');
-button2.className = 'source-button';
-button2.innerHTML = modalInformation.button2;
-div13.appendChild(button2);
+`;
 
 const parentModal = document.querySelector('.modal');
 const openModalButtons = document.querySelector('.btn');
@@ -132,69 +83,51 @@ const openModalButtons6 = document.querySelector('.btn5');
 const openModalButtons7 = document.querySelector('.btn6');
 const sixPic = document.getElementById('sixpic');
 
-function appear() {
+openModalButtons.addEventListener('click', () => {
   sixPic.style.display = 'grid';
-  // overlay.style.filter = 'blur(10px)';
-}
+});
 
-openModalButtons.addEventListener('click', appear);
-
-function disappear() {
+closeModalButtons.addEventListener('click', () => {
   sixPic.style.display = 'none';
   overlay.style.filter = 'blur(0px)';
-}
-function disappear2() {
+});
+
+closeModalButton.addEventListener('click', () => {
   parentModal.style.display = 'none';
   overlay.style.filter = 'blur(0px)';
-}
+});
 
-closeModalButtons.addEventListener('click', disappear);
-closeModalButton.addEventListener('click', disappear2);
-
-function dissappearParent(e) {
+parentModal.addEventListener('click', (e) => {
   if (e.target.className === '.modal') {
     parentModal.style.display = 'none';
     overlay.style.filter = 'blur(0px)';
   }
-}
-parentModal.addEventListener('click', dissappearParent);
+});
 
-function appearr() {
+openModalButtons7.addEventListener('click', () => {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
-}
-
-function appearrr() {
+});
+openModalButtons5.addEventListener('click', () => {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
-}
-
-function appearrrr() {
+});
+openModalButtons6.addEventListener('click', () => {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
-}
-
-function appearrrrr() {
+});
+openModalButtons4.addEventListener('click', () => {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
-}
-
-function appearrrrrr() {
+});
+openModalButtons3.addEventListener('click', () => {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
-}
-
-function appearrrrrrr() {
+});
+openModalButtons2.addEventListener('click', () => {
   parentModal.style.display = 'block';
   overlay.style.filter = 'blur(10px)';
-}
-
-openModalButtons7.addEventListener('click', appearrrrrrr);
-openModalButtons5.addEventListener('click', appearrrrr);
-openModalButtons6.addEventListener('click', appearrrrrr);
-openModalButtons4.addEventListener('click', appearrrr);
-openModalButtons3.addEventListener('click', appearrr);
-openModalButtons2.addEventListener('click', appearr);
+});
 
 // Form javascript
 

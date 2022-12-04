@@ -352,7 +352,7 @@ li {
   z-index: 10;
   background-color: #fff;
   width: 60%;
-  max-height: 90%;
+  max-height: 80%;
   border: 1px solid #dfe1e6;
   animation: 1s drop;
   display: none;
@@ -1507,9 +1507,6 @@ footer {
 
   .modal {
     width: 1200px;
-    max-width: 100%;
-
-    /* max-height: 90%; */
   }
 
   .modal-pic {
@@ -1518,8 +1515,6 @@ footer {
     background-image: url(./images/tttttt.jpg);
     background-size: 55% 100%;
     height: 450px;
-    margin-left: 30px;
-    margin-top: 30px;
 
     /* width: 20%; */
   }
@@ -1553,9 +1548,6 @@ footer {
 
   .modal-desktop {
     display: flex;
-
-    /* position: absolute; */
-    flex-direction: row;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     width: 400px;
@@ -1563,7 +1555,6 @@ footer {
     line-height: 30px;
     margin-left: 680px;
     margin-top: -160px;
-    height: 90%;
   }
 
   .modal-mobile {
@@ -1683,7 +1674,7 @@ footer {
   }
 
   #one {
-    width: 163%;
+    width: 108%;
     height: 400px;
     margin-top: 20px;
     cursor: pointer;
@@ -1758,7 +1749,7 @@ footer {
   #threepro {
     display: none;
     cursor: pointer;
-    margin-top: -3rem;
+    margin-top: -1rem;
   }
 
   #three:hover #threepro {
@@ -1769,7 +1760,7 @@ footer {
   #fourpro {
     display: none;
     cursor: pointer;
-    margin-top: -3rem;
+    margin-top: -1rem;
   }
 
   #four:hover #fourpro {
@@ -1780,7 +1771,7 @@ footer {
   #fivepro {
     display: none;
     cursor: pointer;
-    margin-top: -3rem;
+    margin-top: -1rem;
   }
 
   #five:hover #fivepro {
@@ -1791,7 +1782,7 @@ footer {
   #sixpro {
     display: none;
     cursor: pointer;
-    margin-top: -3rem;
+    margin-top: -1rem;
   }
 
   #six:hover #sixpro {
@@ -1832,7 +1823,6 @@ footer {
     background-size: 100% 100%;
     z-index: 2;
     transition: none;
-    transform: scale(1.07);
     cursor: pointer;
   }
 
@@ -1854,7 +1844,6 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: none;
-    transform: scale(1.07);
     cursor: pointer;
   }
 
@@ -1878,7 +1867,6 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: none;
-    transform: scale(1.07);
     cursor: pointer;
   }
 
@@ -1902,7 +1890,6 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: none;
-    transform: scale(1.07);
     cursor: pointer;
   }
 
