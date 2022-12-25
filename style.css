@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: 1s;
 }
 
 body {
@@ -275,9 +276,9 @@ li {
 .modal-social li {
   box-sizing: border-box;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border: 1px solid #8993a4;
-  margin: 0 5px;
+  margin: 2px 5px;
 }
 
 #social li {
@@ -303,7 +304,7 @@ li {
   padding-top: 24px;
 }
 
-.form > button {
+.form>button {
   background-color: #ff6b00;
   align-items: center;
   padding: 12px 12px;
@@ -336,19 +337,25 @@ li {
   align-items: center;
 }
 
-.modal {
+.modal,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal6 {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   background-color: #fff;
-  width: 60%;
-  max-height: 80%;
+  width: 65%;
+  max-height: 90%;
   border: 1px solid #dfe1e6;
   animation: 1s drop;
   display: none;
 }
+
 
 @keyframes drop {
   0% {
@@ -373,7 +380,12 @@ li {
   display: none;
 }
 
-.close-button {
+.close-button,
+.close-button2,
+.close-button3,
+.close-button4,
+.close-button5,
+.close-button6 {
   cursor: pointer;
   outline: none;
   margin-right: 24px;
@@ -396,7 +408,8 @@ li {
 }
 
 .modal-social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
   flex-direction: row;
   align-items: center;
   font-family: "Inter", sans-serif;
@@ -404,7 +417,7 @@ li {
   font-size: 13px;
   padding-left: 24px;
   font-weight: 600;
-  margin-top: -15px;
+  margin-top: -19px;
 }
 
 .modal-pic {
@@ -1497,9 +1510,16 @@ footer {
     border-radius: 10rem;
   }
 
-  .modal {
+  .modal,
+  .modal2,
+  .modal3,
+  .modal4,
+  .modal5,
+  .modal6 {
     width: 1200px;
+    max-height: 70%;
   }
+
 
   .modal-pic {
     display: flex;
@@ -1594,41 +1614,11 @@ footer {
     border-color: #eee9e8;
   }
 
-  #onepro button:hover {
-    background-color: #fff5e1;
-    color: #f87b33;
-    border-color: #dbd8d7;
-    cursor: pointer;
-  }
-
-  #twopro button:hover {
-    background-color: #fff5e1;
-    color: #f87b33;
-    border-color: #dbd8d7;
-    cursor: pointer;
-  }
-
-  #threepro button:hover {
-    background-color: #fff5e1;
-    color: #f87b33;
-    border-color: #dbd8d7;
-    cursor: pointer;
-  }
-
-  #fourpro button:hover {
-    background-color: #fff5e1;
-    color: #f87b33;
-    border-color: #dbd8d7;
-    cursor: pointer;
-  }
-
-  #fivepro button:hover {
-    background-color: #fff5e1;
-    color: #f87b33;
-    border-color: #dbd8d7;
-    cursor: pointer;
-  }
-
+  #onepro button:hover,
+  #twopro button:hover,
+  #threepro button:hover,
+  #fourpro button:hover,
+  #fivepro button:hover,
   #sixpro button:hover {
     background-color: #fff5e1;
     color: #f87b33;
@@ -1691,14 +1681,22 @@ footer {
     cursor: pointer;
   }
 
-  #twopro {
+  #twopro,
+  #threepro,
+  #fourpro,
+  #fivepro,
+  #sixpro {
     display: none;
     cursor: pointer;
     background-color: #eb8c51;
     margin-top: 23rem;
   }
 
-  #two:hover #twopro {
+  #two:hover #twopro,
+  #three:hover #threepro,
+  #four:hover #fourpro,
+  #five:hover #fivepro,
+  #six:hover #sixpro {
     display: block;
     cursor: pointer;
     font-size: 2px;
@@ -1726,60 +1724,34 @@ footer {
     color: #00040b;
   }
 
-  #two:hover #twom {
-    display: none;
-  }
-
-  #two:hover #twop {
-    display: none;
-  }
-
+  #two:hover #twom,
+  #two:hover #twop,
   #two:hover #twos {
     display: none;
   }
 
-  #threepro {
+  #three:hover #threem,
+  #three:hover #threep,
+  #three:hover #threes {
     display: none;
-    cursor: pointer;
-    margin-top: -1rem;
   }
 
-  #three:hover #threepro {
-    display: block;
-    cursor: pointer;
-  }
-
-  #fourpro {
+  #four:hover #fourm,
+  #four:hover #fourp,
+  #four:hover #fours {
     display: none;
-    cursor: pointer;
-    margin-top: -1rem;
   }
 
-  #four:hover #fourpro {
-    display: block;
-    cursor: pointer;
-  }
-
-  #fivepro {
+  #five:hover #fivem,
+  #five:hover #fivep,
+  #five:hover #fives {
     display: none;
-    cursor: pointer;
-    margin-top: -1rem;
   }
 
-  #five:hover #fivepro {
-    display: block;
-    cursor: pointer;
-  }
-
-  #sixpro {
+  #six:hover #sixm,
+  #six:hover #sixp,
+  #six:hover #sixs {
     display: none;
-    cursor: pointer;
-    margin-top: -1rem;
-  }
-
-  #six:hover #sixpro {
-    display: block;
-    cursor: pointer;
   }
 
   #two {
@@ -1795,11 +1767,9 @@ footer {
     background-image: url(./images/todolist.png);
     background-repeat: no-repeat;
     background-size: 100% 90%;
-    transition: 1s;
     transform: scale(1);
     cursor: pointer;
     border-style: groove;
-    box-shadow: 10px 5px 10px 5px #091e42;
   }
 
   #three {
