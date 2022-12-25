@@ -304,7 +304,7 @@ li {
   padding-top: 24px;
 }
 
-.form>button {
+.form > button {
   background-color: #ff6b00;
   align-items: center;
   padding: 12px 12px;
@@ -355,7 +355,6 @@ li {
   animation: 1s drop;
   display: none;
 }
-
 
 @keyframes drop {
   0% {
@@ -1520,7 +1519,6 @@ footer {
     max-height: 70%;
   }
 
-
   .modal-pic {
     display: flex;
     flex-direction: row;
@@ -1730,10 +1728,24 @@ footer {
     display: none;
   }
 
+  #threem {
+    margin-top: 145px;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
   #three:hover #threem,
   #three:hover #threep,
   #three:hover #threes {
     display: none;
+  }
+
+  #fourm {
+    margin-top: 90px;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 25px;
   }
 
   #four:hover #fourm,
@@ -1742,10 +1754,24 @@ footer {
     display: none;
   }
 
+  #fivem {
+    margin-top: 90px;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 32px;
+  }
+
   #five:hover #fivem,
   #five:hover #fivep,
   #five:hover #fives {
     display: none;
+  }
+
+  #sixm {
+    margin-top: 115px;
+    font-family: "Crete Round", serif;
+    font-weight: 400;
+    font-size: 15px;
   }
 
   #six:hover #sixm,
@@ -1788,13 +1814,6 @@ footer {
     cursor: pointer;
   }
 
-  #threem {
-    margin-top: 145px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 20px;
-  }
-
   #four {
     width: 326px;
     height: 410px;
@@ -1807,13 +1826,6 @@ footer {
     background-size: 100% 100%;
     transition: none;
     cursor: pointer;
-  }
-
-  #fourm {
-    margin-top: 90px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 25px;
   }
 
   #five {
@@ -1832,13 +1844,6 @@ footer {
     cursor: pointer;
   }
 
-  #fivem {
-    margin-top: 90px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 32px;
-  }
-
   #six {
     width: 326px;
     height: 390px;
@@ -1853,13 +1858,6 @@ footer {
     background-size: 100% 100%;
     transition: none;
     cursor: pointer;
-  }
-
-  #sixm {
-    margin-top: 115px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 15px;
   }
 
   #about {
