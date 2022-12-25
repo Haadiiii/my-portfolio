@@ -247,8 +247,6 @@ li {
   display: flex;
   flex-direction: column;
   font-family: "Crete Round", serif;
-  align-items: center;
-  padding-top: 30px;
   font-size: 30px;
   font-weight: 400;
 }
@@ -268,14 +266,10 @@ li {
 #social {
   display: flex;
   flex-direction: row;
-  align-items: center;
   font-family: "Inter", sans-serif;
-  font-style: normal;
   font-size: 17px;
   padding-top: 12px;
-  padding-right: 270px;
-  width: 20px;
-  font-weight: 500;
+  margin-left: 2rem;
 }
 
 .modal-social li {
@@ -307,8 +301,6 @@ li {
   display: flex;
   flex-direction: row;
   padding-top: 24px;
-  height: 48px;
-  margin-left: 24px;
 }
 
 .form > button {
@@ -1474,7 +1466,7 @@ footer {
   }
 
   .prohead {
-    margin-left: 60px;
+    margin-left: 25px;
     width: 100%;
   }
 
