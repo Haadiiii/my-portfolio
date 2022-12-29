@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  transition: 1s;
 }
 
 body {
@@ -203,7 +202,6 @@ li {
 }
 
 #main {
-  background-color: white;
   display: grid;
   grid-column: auto;
   justify-content: center;
@@ -242,6 +240,7 @@ li {
   display: flex;
   padding-top: 100px;
   padding-left: 25px;
+  width: 100%;
 }
 
 #projectheader {
@@ -254,6 +253,7 @@ li {
 
 .prohead {
   font-weight: inherit;
+  margin-left: 2rem;
 }
 
 .para {
@@ -265,8 +265,8 @@ li {
 }
 
 #social {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   font-family: "Inter", sans-serif;
   font-size: 17px;
   padding-top: 12px;
@@ -302,6 +302,7 @@ li {
   display: flex;
   flex-direction: row;
   padding-top: 24px;
+  margin-left: 2rem;
 }
 
 .form > button {
@@ -356,6 +357,20 @@ li {
   display: none;
 }
 
+#sixpic {
+  margin-top: 5rem;
+}
+
+#close-btn-new {
+  padding: 10px;
+  justify-content: center;
+  background-color: #e7dede;
+  border: none;
+  color: rgb(19, 17, 17);
+  font-size: 18px;
+  font-weight: 700;
+}
+
 @keyframes drop {
   0% {
     top: -100px;
@@ -392,7 +407,6 @@ li {
   border: none;
   font-size: 30px;
   transition: 200ms ease-in-out;
-  margin-bottom: 44px;
   animation: 1s dropout;
 }
 
@@ -423,6 +437,56 @@ li {
   display: flex;
   flex-direction: column;
   background-image: url(./images/SnapshootPortfolio.png);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.modal-pic1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/Rockets.png);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.modal-pic3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/Screenshot\ 2022-10-06\ 130423.png);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.modal-pic4 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.modal-pic5 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-19-56.png);
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  margin-top: 10px;
+  margin-left: 24px;
+}
+
+.modal-pic6 {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-38-28.png);
   background-repeat: no-repeat;
   background-size: 90% 100%;
   margin-top: 10px;
@@ -613,13 +677,15 @@ li {
 }
 
 #one {
-  background-image: url(./images/new1.png);
+  background-image: url(./images/Missions.png);
   position: relative;
-  bottom: 9px;
+  bottom: 46px;
   margin-left: 24px;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
+  background-size: 95% 100%;
+  background-position: center;
 }
 
 #onem {
@@ -681,14 +747,15 @@ li {
 }
 
 #two {
-  background-image: url(./images/Placeholder.png);
-  margin-top: 24px;
+  background-image: url(./images/todolist.png);
+  margin-top: 100px;
   position: relative;
-  bottom: 15px;
+  bottom: 50px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  background-size: 95% 100%;
 }
 
 #twom {
@@ -696,7 +763,7 @@ li {
   padding-left: 16px;
   padding-right: 16px;
   font-size: 25px;
-  color: #fff;
+  color: rgb(15, 15, 15);
   font-family: "Crete Round", serif;
 }
 
@@ -711,7 +778,7 @@ li {
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
-  color: #fff;
+  color: rgb(17, 17, 17);
 }
 
 #twos {
@@ -723,7 +790,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: #fff;
+  color: rgb(20, 20, 20);
 }
 
 #twos li {
@@ -743,14 +810,15 @@ li {
 }
 
 #three {
-  background-image: url(./images/Placeholder.png);
-  margin-top: 24px;
+  background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
+  margin-top: 100px;
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  background-size: 95% 100%;
 }
 
 #threem {
@@ -805,14 +873,15 @@ li {
 }
 
 #four {
-  background-image: url(./images/Placeholder.png);
-  margin-top: 24px;
+  background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
+  margin-top: 100px;
   position: relative;
-  bottom: 55px;
+  bottom: 50px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  background-size: 95% 100%;
 }
 
 #fourm {
@@ -820,7 +889,7 @@ li {
   padding-left: 16px;
   padding-right: 16px;
   font-size: 32px;
-  color: #fff;
+  color: rgb(7, 7, 7);
   font-family: "Crete Round", serif;
 }
 
@@ -835,7 +904,8 @@ li {
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
-  color: #fff;
+  color: rgb(12, 12, 12);
+  background-color: rgb(246, 250, 250);
 }
 
 #fours {
@@ -847,7 +917,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: #fff;
+  color: rgb(14, 13, 13);
 }
 
 #fours li {
@@ -867,14 +937,15 @@ li {
 }
 
 #five {
-  background-image: url(./images/Placeholder.png);
-  margin-top: 24px;
+  background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-20-18.png);
+  margin-top: 100px;
   position: relative;
-  bottom: 80px;
+  bottom: 50px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  background-size: 95% 100%;
 }
 
 #fivem {
@@ -882,7 +953,7 @@ li {
   padding-left: 16px;
   padding-right: 16px;
   font-size: 32px;
-  color: #fff;
+  color: rgb(17, 17, 17);
   font-family: "Crete Round", serif;
 }
 
@@ -897,7 +968,8 @@ li {
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
-  color: #fff;
+  color: rgb(22, 22, 22);
+  background-color: aliceblue;
 }
 
 #fives {
@@ -909,7 +981,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: #fff;
+  color: rgb(20, 20, 20);
 }
 
 #fives li {
@@ -929,21 +1001,22 @@ li {
 }
 
 #six {
-  background-image: url(./images/Placeholder.png);
-  margin-top: 24px;
+  background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-37-30.png);
+  margin-top: 100px;
   position: relative;
-  bottom: 90px;
+  bottom: 50px;
   margin-left: 24px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  background-size: 95% 100%;
 }
 
 #sixm {
   padding-top: 84px;
   padding-left: 16px;
   padding-right: 16px;
-  color: #fff;
+  color: rgb(10, 10, 10);
 }
 
 .sim {
@@ -959,7 +1032,8 @@ li {
   font-size: 15px;
   padding: 12px 16px;
   width: 80%;
-  color: #fff;
+  color: rgb(12, 12, 12);
+  background-color: aliceblue;
 }
 
 #sixs {
@@ -971,7 +1045,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: #fff;
+  color: rgb(15, 15, 15);
 }
 
 #sixs li {
@@ -1037,6 +1111,7 @@ li {
   color: #fff;
   border-color: #ff6b00;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #aline {
@@ -1489,10 +1564,6 @@ footer {
     letter-spacing: 0.03em;
   }
 
-  #social {
-    margin-right: 400px;
-  }
-
   #click {
     padding-right: 600px;
     text-align: center;
@@ -1516,7 +1587,7 @@ footer {
   .modal5,
   .modal6 {
     width: 1200px;
-    max-height: 70%;
+    max-height: 80%;
   }
 
   .modal-pic {
@@ -1525,8 +1596,46 @@ footer {
     background-image: url(./images/tttttt.jpg);
     background-size: 55% 100%;
     height: 450px;
+  }
 
-    /* width: 20%; */
+  .modal-pic1 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/Rockets.png);
+    background-size: 55% 100%;
+    height: 450px;
+  }
+
+  .modal-pic3 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
+    background-size: 55% 100%;
+    height: 450px;
+  }
+
+  .modal-pic4 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
+    background-size: 55% 100%;
+    height: 450px;
+  }
+
+  .modal-pic5 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-19-56.png);
+    background-size: 55% 100%;
+    height: 450px;
+  }
+
+  .modal-pic6 {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-38-28.png);
+    background-size: 55% 100%;
+    height: 450px;
   }
 
   .modal-header22 {
@@ -1655,23 +1764,22 @@ footer {
 
   #one {
     width: 108%;
-    height: 400px;
-    margin-top: 20px;
+    margin-top: 98px;
     cursor: pointer;
   }
 
   #onepro {
-    background-image: url(./images/new1.png);
+    background-image: url(./images/Missions.png);
     display: flex;
     z-index: 2;
     flex-direction: column;
     background-repeat: no-repeat;
-    margin-top: 360px;
+    margin-top: 0;
     cursor: pointer;
   }
 
   #onepro:hover {
-    background-image: url(./images/SnapshootPortfolio2.png);
+    background-image: url(./images/Missions.png);
     background-repeat: no-repeat;
     background-size: 95% 100%;
     transition: none;
@@ -1782,7 +1890,6 @@ footer {
 
   #two {
     width: 326px;
-    height: 410px;
     background-image: url(./images/tttttt.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1800,13 +1907,12 @@ footer {
 
   #three {
     width: 326px;
-    height: 410px;
-    background-image: url(./images/new3.png);
+    background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
     background-repeat: no-repeat;
   }
 
   #three:hover {
-    background-image: url(./images/SnapshootPortfolio2.png);
+    background-image: url(./images/Screenshot\ 2022-10-06\ 130423.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 2;
@@ -1815,29 +1921,28 @@ footer {
   }
 
   #four {
-    width: 326px;
-    height: 410px;
-    margin-top: 60px;
+    width: 342px;
+    margin-top: 87px;
   }
 
   #four:hover {
-    background-image: url(./images/SnapshootPortfolio2.png);
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 95% 100%;
     transition: none;
     cursor: pointer;
   }
 
   #five {
     width: 326px;
-    height: 390px;
-    background-image: url(./images/new2.png);
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-20-18.png);
     background-repeat: no-repeat;
     margin-top: 80px;
+    background-size: 100% 100%;
   }
 
   #five:hover {
-    background-image: url(./images/SnapshootPortfolio2.png);
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-20-43.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: none;
@@ -1846,14 +1951,14 @@ footer {
 
   #six {
     width: 326px;
-    height: 390px;
-    background-image: url(./images/new3.png);
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-37-30.png);
     background-repeat: no-repeat;
     margin-top: 80px;
+    background-size: 100% 100%;
   }
 
   #six:hover {
-    background-image: url(./images/SnapshootPortfolio2.png);
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-37-47.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: none;

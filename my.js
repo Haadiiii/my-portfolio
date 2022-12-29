@@ -19,14 +19,15 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 }));
 
 const modalInformation = {
-  heading1: 'Multi Post Stories',
-  title2: 'Keeping track of hundreds  of components website',
-  title: 'demo',
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    'A simple todo list app that allows users to add, delete, edit, and clear all completed tasks, built with HTML, CSS, Javascript and webpack.',
   description2:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    'This is a webapp which uses real live data from the SpaceX API. It is an application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+  description3: 'this is a project that shows the covid-19 cases in the world and in each country, it shows the number of cases, deaths, and recovered cases. And it shows the number of cases in the last 24 hours.',
   imageSrc: './images/todolist.png',
+  description4: 'It is a single page website with two connected pages books and category in book page you will add books and Remove book through connect API and also watch the lists and progress of books.',
+  description5: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+  description6: 'this is a Budget App with Ruby on Rails, it allows you to create a user, create a group, create a transaction, you can also see the total amount of money spent in the group, and the total amount of money spent by each user, and the total amount of money spent by each user in the group.',
   button1: 'See Live ',
   button2: 'See Source ',
   li: 'html',
@@ -35,6 +36,13 @@ const modalInformation = {
   li4: 'css',
   li5: 'JavaScript',
   li6: 'React',
+  li7: 'Ruby',
+  li8: 'webpack',
+  li9: 'redux',
+  li10: 'Rspec',
+  li11: 'Jest',
+  li12: 'Capybara',
+
 };
 
 const mainModal = document.querySelector('.main-modal');
@@ -43,9 +51,9 @@ mainModal.innerHTML = `
   <div class="modal">
     <div class="modal-header">
       <div class="title">
-          <h2 class="modal-headm">${modalInformation.heading1}</h2>
+          <h2 class="modal-headm">Space Travelers Hub</h2>
           <div class="modal-header22">
-            <h2 class = "modal-headd">${modalInformation.title2}</h2>
+            <h2 class = "modal-headd">Space Travelers Hub</h2>
           </div>
       </div>
       <span class="close-button">&times;</span>
@@ -54,20 +62,24 @@ mainModal.innerHTML = `
       <ul class ="modal-social">
         <li class = "tags1">${modalInformation.li}</li>
         <li class = "tags2">${modalInformation.li2}</li>
-        <li class = "tag3">${modalInformation.li3}</li>
+        <li class = "tag3">${modalInformation.li4}</li>
+        <li class = "tag3">${modalInformation.li8}</li>
+        <li class = "tag3">${modalInformation.li9}</li>
+        <li class = "tag3">${modalInformation.li6}</li>
+
       </ul>
     </div>
 
-      <div class="modal-pic">
+      <div class="modal-pic1">
         <div class="modal-body">
         <p class ="modal-mobile">${modalInformation.description2}</p>
-        <p class ="modal-desktop">${modalInformation.description}</p>
+        <p class ="modal-desktop">${modalInformation.description2}</p>
         </div>
       </div>
 
       <div class="modal-button">
-          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
-          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://deploy-preview-38--gilded-cucurucho-f6c94c.netlify.app/">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/space-travelers-capstone">${modalInformation.button2}</a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -93,20 +105,20 @@ mainModalTwo.innerHTML = `
         <li class = "tags2">${modalInformation.li2}</li>
         <li class = "tag4">${modalInformation.li4}</li>
         <li class = "tag5">${modalInformation.li5}</li>
-        <li class = "tag6">${modalInformation.li6}</li>
+        <li class = "tag6">${modalInformation.li8}</li>
       </ul>
     </div>
 
       <div class="modal-pic">
         <div class="modal-body">
-        <p class ="modal-mobile">${modalInformation.description2}</p>
+        <p class ="modal-mobile">${modalInformation.description}</p>
         <p class ="modal-desktop">${modalInformation.description}</p>
         </div>
       </div>
 
       <div class="modal-button">
-          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
-          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://haadiiii.github.io/todo-list/dist/">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/todo-list">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -119,9 +131,9 @@ mainModalThree.innerHTML = `
 <div class="modal3">
     <div class="modal-header">
       <div class="title">
-          <h2 class="modal-headm">${modalInformation.title}</h2>
+          <h2 class="modal-headm">Corona World</h2>
           <div class="modal-header22">
-          <h2 class="modal-headd">${modalInformation.title}</h2>
+          <h2 class="modal-headd">Corona World</h2>
           </div>
       </div>
       <span class="close-button3">&times;</span>
@@ -129,21 +141,24 @@ mainModalThree.innerHTML = `
     <div class="modal-tags">
       <ul class ="modal-social">
         <li class = "tags1">${modalInformation.li}</li>
-        <li class = "tags2">${modalInformation.li2}</li>
-        <li class = "tag3">${modalInformation.li3}</li>
+        <li class = "tags2">${modalInformation.li4}</li>
+        <li class = "tag3">${modalInformation.li2}</li>
+        <li class = "tag3">${modalInformation.li5}</li>
+        <li class = "tag3">${modalInformation.li6}</li>
+        <li class = "tag3">${modalInformation.li9}</li>
       </ul>
     </div>
 
-      <div class="modal-pic">
+      <div class="modal-pic3">
         <div class="modal-body">
-        <p class ="modal-mobile">${modalInformation.description2}</p>
-        <p class ="modal-desktop">${modalInformation.description}</p>
+        <p class ="modal-mobile">${modalInformation.description3}</p>
+        <p class ="modal-desktop">${modalInformation.description3}</p>
         </div>
       </div>
 
       <div class="modal-button">
-          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
-          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://covid-19-worlds.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/corona-world">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -155,31 +170,34 @@ mainModalFour.innerHTML = `
 <div class="modal4">
     <div class="modal-header">
       <div class="title">
-          <h2 class="modal-headm">${modalInformation.title}</h2>
+          <h2 class="modal-headm">BookStore</h2>
           <div class="modal-header22">
-          <h2 class="modal-headd">${modalInformation.title}</h2>
+          <h2 class="modal-headd">Bookstore</h2>
           </div>
       </div>
       <span class="close-button4">&times;</span>
     </div>
     <div class="modal-tags">
       <ul class ="modal-social">
-        <li class = "tags1">${modalInformation.li}</li>
-        <li class = "tags2">${modalInformation.li2}</li>
-        <li class = "tag3">${modalInformation.li3}</li>
+      <li class = "tags1">${modalInformation.li}</li>
+      <li class = "tags2">${modalInformation.li4}</li>
+      <li class = "tag3">${modalInformation.li2}</li>
+      <li class = "tag3">${modalInformation.li5}</li>
+      <li class = "tag3">${modalInformation.li6}</li>
+      <li class = "tag3">${modalInformation.li9}</li>
       </ul>
     </div>
 
-      <div class="modal-pic">
+      <div class="modal-pic4">
         <div class="modal-body">
-        <p class ="modal-mobile">${modalInformation.description2}</p>
-        <p class ="modal-desktop">${modalInformation.description}</p>
+        <p class ="modal-mobile">${modalInformation.description4}</p>
+        <p class ="modal-desktop">${modalInformation.description4}</p>
         </div>
       </div>
 
       <div class="modal-button">
-          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
-          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://haadii-bookstore.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/Bookstore">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -191,31 +209,33 @@ mainModalFive.innerHTML = `
 <div class="modal5">
     <div class="modal-header">
       <div class="title">
-          <h2 class="modal-headm">${modalInformation.title}</h2>
+          <h2 class="modal-headm">Recipe App</h2>
           <div class="modal-header22">
-          <h2 class="modal-headd">${modalInformation.title}</h2>
+          <h2 class="modal-headd">Recipe App</h2>
           </div>
       </div>
       <span class="close-button5">&times;</span>
     </div>
     <div class="modal-tags">
       <ul class ="modal-social">
-        <li class = "tags1">${modalInformation.li}</li>
+        <li class = "tags1">${modalInformation.li7}</li>
         <li class = "tags2">${modalInformation.li2}</li>
         <li class = "tag3">${modalInformation.li3}</li>
+        <li class = "tag3">${modalInformation.li10}</li>
+        <li class = "tag3">${modalInformation.li12}</li>
       </ul>
     </div>
 
-      <div class="modal-pic">
+      <div class="modal-pic5">
         <div class="modal-body">
-        <p class ="modal-mobile">${modalInformation.description2}</p>
-        <p class ="modal-desktop">${modalInformation.description}</p>
+        <p class ="modal-mobile">${modalInformation.description5}</p>
+        <p class ="modal-desktop">${modalInformation.description5}</p>
         </div>
       </div>
 
       <div class="modal-button">
-          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
-          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://recipe-website.herokuapp.com/users/sign_in">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/haadii-recipe-app">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -227,31 +247,33 @@ mainModalSix.innerHTML = `
 <div class="modal6">
     <div class="modal-header">
       <div class="title">
-          <h2 class="modal-headm">${modalInformation.title}</h2>
+          <h2 class="modal-headm">Budget App</h2>
           <div class="modal-header22">
-          <h2 class="modal-headd">${modalInformation.title}</h2>
+          <h2 class="modal-headd">Budget App</h2>
           </div>
       </div>
       <span class="close-button6">&times;</span>
     </div>
     <div class="modal-tags">
       <ul class ="modal-social">
-        <li class = "tags1">${modalInformation.li}</li>
-        <li class = "tags2">${modalInformation.li2}</li>
-        <li class = "tag3">${modalInformation.li3}</li>
+      <li class = "tags1">${modalInformation.li7}</li>
+      <li class = "tags2">${modalInformation.li2}</li>
+      <li class = "tag3">${modalInformation.li3}</li>
+      <li class = "tag3">${modalInformation.li10}</li>
+      <li class = "tag3">${modalInformation.li12}</li>
       </ul>
     </div>
 
-      <div class="modal-pic">
+      <div class="modal-pic6">
         <div class="modal-body">
-        <p class ="modal-mobile">${modalInformation.description2}</p>
-        <p class ="modal-desktop">${modalInformation.description}</p>
+        <p class ="modal-mobile">${modalInformation.description6}</p>
+        <p class ="modal-desktop">${modalInformation.description6}</p>
         </div>
       </div>
 
       <div class="modal-button">
-          <button class="live-button">${modalInformation.button1}  <img src="./images/Icon.png"></button>
-          <button class="source-button">${modalInformation.button2} <img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://budget-website.herokuapp.com/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/haadii-budget-app">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
