@@ -1320,10 +1320,9 @@ li {
 .error {
   display: none;
   position: absolute;
-  bottom: 12px;
-  left: 650px;
   font-size: 14px;
   color: red;
+  margin-top: 10rem;
 }
 
 .btnx {
@@ -2073,10 +2072,9 @@ footer {
   .error {
     display: none;
     position: absolute;
-    bottom: 12px;
-    left: 650px;
     font-size: 14px;
     color: red;
+    margin-top: 10rem;
   }
 
   .show-error {
