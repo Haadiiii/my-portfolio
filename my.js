@@ -24,7 +24,7 @@ const modalInformation = {
   description2:
     'This is a webapp which uses real live data from the SpaceX API. It is an application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
   description3:
-    'this is a project that shows the covid-19 cases in the world and in each country, it shows the number of cases, deaths, and recovered cases. And it shows the number of cases in the last 24 hours.',
+    'this website is biult for microverse capstone project. it shows the list of top 20 Pokemon and users can like and comment on the Pokemons, it uses API to fetch and post the user data.',
   imageSrc: './images/todolist.png',
   description4:
     'It is a single page website with two connected pages books and category in book page you will add books and Remove book through connect API and also watch the lists and progress of books.',
@@ -134,9 +134,9 @@ mainModalThree.innerHTML = `
 <div class="modal3">
     <div class="modal-header">
       <div class="title">
-          <h2 class="modal-headm">Corona World</h2>
+          <h2 class="modal-headm">Pokemon App</h2>
           <div class="modal-header22">
-          <h2 class="modal-headd">Corona World</h2>
+          <h2 class="modal-headd">Pokemon App</h2>
           </div>
       </div>
       <span class="close-button3">&times;</span>
@@ -147,8 +147,7 @@ mainModalThree.innerHTML = `
         <li class = "tags2">${modalInformation.li4}</li>
         <li class = "tag3">${modalInformation.li2}</li>
         <li class = "tag3">${modalInformation.li5}</li>
-        <li class = "tag3">${modalInformation.li6}</li>
-        <li class = "tag3">${modalInformation.li9}</li>
+        <li class = "tag3">${modalInformation.li8}</li>
       </ul>
     </div>
 
@@ -160,8 +159,8 @@ mainModalThree.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://covid-19-worlds.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/corona-world">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://pokedoki-app.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/Pokemon-App">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>

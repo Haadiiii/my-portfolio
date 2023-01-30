@@ -472,7 +472,7 @@ li {
 .modal-pic3 {
   display: flex;
   flex-direction: column;
-  background-image: url(./images/Screenshot\ 2022-10-06\ 130423.png);
+  background-image: url(./images/Screenshot\ from\ 2023-01-30\ 15-08-18.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 10px;
@@ -758,7 +758,7 @@ li {
 }
 
 #three {
-  background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
+  background-image: url(./images/Screenshot\ from\ 2023-01-30\ 15-07-20.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10;
@@ -1905,24 +1905,26 @@ footer {
 
   #three {
     width: 326px;
-    background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
+    background-image: url(./images/Screenshot\ from\ 2023-01-30\ 15-07-20.png);
     margin-top: 100px;
     position: relative;
     bottom: 50px;
     margin-left: 24px;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 409px;
     border: 3px solid rgb(245, 121, 6);
     cursor: pointer;
   }
 
   #three:hover {
-    background-image: url(./images/Screenshot\ 2022-10-06\ 130423.png);
+    background-image: url(./images/Screenshot\ from\ 2023-01-30\ 15-07-53.png);
     margin-top: 100px;
     position: relative;
     bottom: 50px;
     margin-left: 24px;
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 409px;
