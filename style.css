@@ -239,7 +239,6 @@ li {
 #project1 img {
   display: flex;
   padding-top: 100px;
-  padding-left: 25px;
   width: 100%;
 }
 
@@ -253,13 +252,11 @@ li {
 
 .prohead {
   font-weight: inherit;
-  margin-left: 2rem;
 }
 
 .para {
   font-family: "Inter", sans-serif;
   padding-top: 12px;
-  padding-left: 30px;
   font-size: 16px;
   width: 90%;
 }
@@ -270,7 +267,6 @@ li {
   font-family: "Inter", sans-serif;
   font-size: 17px;
   padding-top: 12px;
-  margin-left: 2rem;
 }
 
 .modal-social li {
@@ -279,6 +275,14 @@ li {
   padding: 10px 10px;
   border: 1px solid #8993a4;
   margin: 2px 5px;
+}
+
+.twos li {
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #8993a4;
+  margin: 0 5px;
+  background: rgb(16 0 0 / 44%);
 }
 
 #social li {
@@ -302,7 +306,7 @@ li {
   display: flex;
   flex-direction: row;
   padding-top: 24px;
-  margin-left: 2rem;
+  margin-bottom: 4rem;
 }
 
 .form > button {
@@ -355,20 +359,13 @@ li {
   border: 1px solid #dfe1e6;
   animation: 1s drop;
   display: none;
+  overflow: scroll;
 }
 
 #sixpic {
-  margin-top: 5rem;
-}
-
-#close-btn-new {
-  padding: 10px;
-  justify-content: center;
-  background-color: #e7dede;
-  border: none;
-  color: rgb(19, 17, 17);
-  font-size: 18px;
-  font-weight: 700;
+  /* margin-top: 5rem; */
+  display: grid;
+  gap: 5rem;
 }
 
 @keyframes drop {
@@ -379,6 +376,25 @@ li {
   100% {
     top: 50%;
   }
+}
+
+#close-btn-new {
+  padding: 5px;
+
+  /* content */
+  background: #fff;
+  border: 1px solid #8993a4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #091e42;
+  text-decoration: none;
+}
+
+#close-btn-new::after {
+  content: url('https://cdn2.iconfinder.com/data/icons/essential-web-4/50/angle-double-up-arrow-direction-32.png');
 }
 
 .title {
@@ -436,9 +452,9 @@ li {
 .modal-pic {
   display: flex;
   flex-direction: column;
-  background-image: url(./images/SnapshootPortfolio.png);
+  background-image: url(./images/tttttt.jpg);
   background-repeat: no-repeat;
-  background-size: 90% 100%;
+  background-size: cover;
   margin-top: 10px;
   margin-left: 24px;
 }
@@ -448,7 +464,7 @@ li {
   flex-direction: column;
   background-image: url(./images/Rockets.png);
   background-repeat: no-repeat;
-  background-size: 90% 100%;
+  background-size: cover;
   margin-top: 10px;
   margin-left: 24px;
 }
@@ -458,7 +474,7 @@ li {
   flex-direction: column;
   background-image: url(./images/Screenshot\ 2022-10-06\ 130423.png);
   background-repeat: no-repeat;
-  background-size: 90% 100%;
+  background-size: cover;
   margin-top: 10px;
   margin-left: 24px;
 }
@@ -468,7 +484,7 @@ li {
   flex-direction: column;
   background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
   background-repeat: no-repeat;
-  background-size: 90% 100%;
+  background-size: cover;
   margin-top: 10px;
   margin-left: 24px;
 }
@@ -478,7 +494,7 @@ li {
   flex-direction: column;
   background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-19-56.png);
   background-repeat: no-repeat;
-  background-size: 90% 100%;
+  background-size: cover;
   margin-top: 10px;
   margin-left: 24px;
 }
@@ -488,7 +504,7 @@ li {
   flex-direction: column;
   background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-38-28.png);
   background-repeat: no-repeat;
-  background-size: 90% 100%;
+  background-size: cover;
   margin-top: 10px;
   margin-left: 24px;
 }
@@ -515,9 +531,9 @@ li {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  padding-top: 5px;
-  max-width: 350px;
-  height: 580px;
+  padding-top: 234px;
+  max-width: 354px;
+  height: 137px;
   margin-left: 24px;
   align-items: center;
 }
@@ -562,68 +578,19 @@ li {
   border-color: #eee9e8;
 }
 
-#onepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
+.blur {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  /* Black w/opacity/see-through */
 }
 
-#twopro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
-#threepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
-#fourpro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
-#fivepro button {
-  width: 327px;
-  height: 48px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  background-color: #ff6b00;
-  border-color: #ff6b00;
-}
-
+#onepro button,
+#twopro button,
+#threepro button,
+#fourpro button,
+#fivepro button,
 #sixpro button {
-  width: 327px;
+  width: 368px;
   height: 48px;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -678,14 +645,12 @@ li {
 
 #one {
   background-image: url(./images/Missions.png);
-  position: relative;
-  bottom: 46px;
-  margin-left: 24px;
-  display: flex;
-  flex-direction: column;
   background-repeat: no-repeat;
-  background-size: 95% 100%;
-  background-position: center;
+  background-size: cover;
+  z-index: 10;
+  border: 3px solid rgb(245, 121, 6);
+  cursor: pointer;
+  display: flex;
 }
 
 #onem {
@@ -734,36 +699,30 @@ li {
 }
 
 #onepro {
-  width: 327px;
-  height: 48px;
-  left: 0;
-  right: 0;
   background-color: #ff6b00;
   background-image: url(./images/Placeholder.png);
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  margin-top: 360px;
+  margin-top: -16px;
 }
 
 #two {
   background-image: url(./images/todolist.png);
-  margin-top: 100px;
-  position: relative;
-  bottom: 50px;
-  margin-left: 24px;
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  border: 3px solid rgb(245, 121, 6);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  background-size: 95% 100%;
 }
 
-#twom {
-  padding-top: 84px;
+.twom {
+  padding-top: 229px;
   padding-left: 16px;
   padding-right: 16px;
-  font-size: 25px;
-  color: rgb(15, 15, 15);
+  font-size: 32px;
+  color: #fff;
   font-family: "Crete Round", serif;
 }
 
@@ -771,17 +730,18 @@ li {
   font-weight: inherit;
 }
 
-#twop {
-  display: flex;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 12px 16px;
-  width: 80%;
-  color: rgb(17, 17, 17);
+.twop {
+  color: #f5f6f8;
+  width: 313px;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #8993a4;
+  background: rgb(16 0 0 / 44%);
 }
 
-#twos {
+.twos {
   display: grid;
   flex-direction: row;
   align-items: center;
@@ -790,39 +750,25 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: rgb(20, 20, 20);
-}
-
-#twos li {
-  box-sizing: border-box;
-  padding: 8px 10px;
-  border: 1px solid #8993a4;
-  margin: 0 5px;
-  background: rgba(255, 255, 255, 0.24);
+  color: rgb(248, 242, 242);
 }
 
 #twopro {
-  width: 327px;
-  height: 48px;
-  left: 0;
-  right: 0;
   background-color: #ff6b00;
 }
 
 #three {
   background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
-  margin-top: 100px;
-  position: relative;
-  bottom: 50px;
-  margin-left: 24px;
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  border: 3px solid rgb(245, 121, 6);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  background-size: 95% 100%;
 }
 
 #threem {
-  padding-top: 84px;
+  padding-top: 229px;
   padding-left: 16px;
   padding-right: 16px;
   font-size: 32px;
@@ -835,13 +781,14 @@ li {
 }
 
 #threep {
-  display: flex;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 12px 16px;
-  width: 80%;
-  color: #fff;
+  color: #f5f6f8;
+  width: 313px;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #8993a4;
+  background: rgb(16 0 0 / 44%);
 }
 
 #threes {
@@ -853,7 +800,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: #fff;
+  color: rgb(252, 247, 247);
 }
 
 #threes li {
@@ -861,11 +808,10 @@ li {
   padding: 8px 10px;
   border: 1px solid #8993a4;
   margin: 0 5px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(16 0 0 / 44%);
 }
 
 #threepro {
-  width: 327px;
   height: 48px;
   left: 0;
   right: 0;
@@ -874,22 +820,20 @@ li {
 
 #four {
   background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
-  margin-top: 100px;
-  position: relative;
-  bottom: 50px;
-  margin-left: 24px;
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  border: 3px solid rgb(245, 121, 6);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  background-size: 95% 100%;
 }
 
 #fourm {
-  padding-top: 84px;
+  padding-top: 229px;
   padding-left: 16px;
   padding-right: 16px;
   font-size: 32px;
-  color: rgb(7, 7, 7);
+  color: #fff;
   font-family: "Crete Round", serif;
 }
 
@@ -898,14 +842,14 @@ li {
 }
 
 #fourp {
-  display: flex;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 12px 16px;
-  width: 80%;
-  color: rgb(12, 12, 12);
-  background-color: rgb(246, 250, 250);
+  color: #f5f6f8;
+  width: 313px;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #8993a4;
+  background: rgb(16 0 0 / 44%);
 }
 
 #fours {
@@ -917,7 +861,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: rgb(14, 13, 13);
+  color: rgb(250, 246, 246);
 }
 
 #fours li {
@@ -925,11 +869,10 @@ li {
   padding: 8px 10px;
   border: 1px solid #8993a4;
   margin: 0 5px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(16 0 0 / 44%);
 }
 
 #fourpro {
-  width: 327px;
   height: 48px;
   left: 0;
   right: 0;
@@ -938,22 +881,20 @@ li {
 
 #five {
   background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-20-18.png);
-  margin-top: 100px;
-  position: relative;
-  bottom: 50px;
-  margin-left: 24px;
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  border: 3px solid rgb(245, 121, 6);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  background-size: 95% 100%;
 }
 
 #fivem {
-  padding-top: 84px;
+  padding-top: 229px;
   padding-left: 16px;
   padding-right: 16px;
   font-size: 32px;
-  color: rgb(17, 17, 17);
+  color: #fff;
   font-family: "Crete Round", serif;
 }
 
@@ -962,14 +903,14 @@ li {
 }
 
 #fivep {
-  display: flex;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 12px 16px;
-  width: 80%;
-  color: rgb(22, 22, 22);
-  background-color: aliceblue;
+  color: #f5f6f8;
+  width: 313px;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #8993a4;
+  background: rgb(16 0 0 / 44%);
 }
 
 #fives {
@@ -981,7 +922,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: rgb(20, 20, 20);
+  color: rgb(252, 247, 247);
 }
 
 #fives li {
@@ -989,11 +930,10 @@ li {
   padding: 8px 10px;
   border: 1px solid #8993a4;
   margin: 0 5px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(16 0 0 / 44%);
 }
 
 #fivepro {
-  width: 327px;
   height: 48px;
   left: 0;
   right: 0;
@@ -1002,14 +942,12 @@ li {
 
 #six {
   background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-37-30.png);
-  margin-top: 100px;
-  position: relative;
-  bottom: 50px;
-  margin-left: 24px;
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+  border: 3px solid rgb(245, 121, 6);
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
-  background-size: 95% 100%;
 }
 
 #sixm {
@@ -1020,20 +958,24 @@ li {
 }
 
 .sim {
-  font-family: "Crete Round", serif;
-  font-weight: 400;
+  padding-top: 176px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-weight: inherit;
   font-size: 32px;
+  color: #fff;
+  font-family: "Crete Round", serif;
 }
 
 #sixp {
-  display: flex;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 12px 16px;
-  width: 80%;
-  color: rgb(12, 12, 12);
-  background-color: aliceblue;
+  color: #f5f6f8;
+  width: 313px;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #8993a4;
+  background: rgb(16 0 0 / 44%);
 }
 
 #sixs {
@@ -1045,7 +987,7 @@ li {
   font-size: 17px;
   padding-bottom: 20px;
   padding-left: 12px;
-  color: rgb(15, 15, 15);
+  color: rgb(247, 245, 245);
 }
 
 #sixs li {
@@ -1053,11 +995,10 @@ li {
   padding: 8px 10px;
   border: 1px solid #8993a4;
   margin: 0 5px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(16 0 0 / 44%);
 }
 
 #sixpro {
-  width: 327px;
   height: 48px;
   left: 0;
   right: 0;
@@ -1069,7 +1010,7 @@ li {
   background-color: #1c1a19;
   background-image: url(./images/Frame.png);
   background-repeat: no-repeat;
-  background-position: 100% 20%;
+  background-position: 100% 15%;
 }
 
 #ahead {
@@ -1099,8 +1040,14 @@ li {
   flex-direction: row;
   align-items: center;
   width: 180px;
-  height: 48px;
-  padding: 24px 24px 190px;
+
+  /* height: 48px; */
+  padding: 10px;
+  margin-bottom: 15rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  border: 3px solid rgb(245, 121, 6);
+  background-color: #f46106;
 }
 
 .ak {
@@ -1128,13 +1075,14 @@ li {
   padding-bottom: 132px;
 }
 
-#bulletone {
-  display: inline-flex;
+#bulletone,
+#bulletthree,
+#bulletfive {
+  display: flex;
   color: #fff;
-  padding-left: 180px;
   padding-top: 136px;
   font-size: 32px;
-  text-align: center;
+  justify-content: center;
   font-family: "InaiMathi", sans-serif;
   font-weight: 700;
 }
@@ -1143,7 +1091,6 @@ li {
   display: flex;
   flex-direction: column;
   color: #fff;
-  padding-left: 30px;
   padding-top: 20px;
   font-size: 22px;
   text-align: center;
@@ -1157,17 +1104,6 @@ li {
 
 #maintwo {
   margin-top: -150px;
-}
-
-#bulletthree {
-  display: inline-flex;
-  color: #fff;
-  padding-left: 180px;
-  padding-top: 44px;
-  font-size: 32px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
 }
 
 #bulletfour {
@@ -1186,17 +1122,6 @@ li {
   margin-top: 10%;
 }
 
-#bulletfive {
-  display: inline-flex;
-  color: #fff;
-  padding-left: 220px;
-  padding-top: 44px;
-  font-size: 32px;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-}
-
 #bulletsix {
   display: flex;
   flex-direction: column;
@@ -1207,6 +1132,7 @@ li {
   text-align: center;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  margin-bottom: 7rem;
 }
 
 #bulletsix li {
@@ -1533,12 +1459,20 @@ footer {
   #project1 {
     display: grid;
     width: 100%;
+    padding: 30px;
+    margin-bottom: 4rem;
   }
 
   .mainline {
     display: flex;
     flex-direction: row;
     padding-left: 150px;
+  }
+
+  #project1 img {
+    display: flex;
+    padding-top: 100px;
+    width: 44%;
   }
 
   .img1 {
@@ -1561,11 +1495,11 @@ footer {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.03em;
+    margin-left: 2rem;
   }
 
-  #click {
-    padding-right: 600px;
-    text-align: center;
+  #social {
+    margin-left: 1.8rem;
   }
 
   #social li:hover {
@@ -1688,13 +1622,7 @@ footer {
     cursor: pointer;
   }
 
-  .live-button {
-    background-color: #f55800;
-    padding: 14px 10px 14px 19px;
-    font-size: 15px;
-    gap: 20px;
-  }
-
+  .live-button,
   .source-button {
     background-color: #f55800;
     padding: 14px 10px 14px 19px;
@@ -1702,22 +1630,35 @@ footer {
     gap: 20px;
   }
 
-  .live-button:hover {
+  .live-button:hover,
+  .source-button:hover {
     background-color: #322c21;
     color: #fb6f2e;
     border-color: #eee9e8;
   }
 
-  .source-button:hover {
-    background-color: #2d2922;
-    color: #fb6f2e;
-    border-color: #eee9e8;
+  #onepro button,
+  #twopro button,
+  #threepro button,
+  #fourpro button,
+  #fivepro button,
+  #sixpro button {
+    width: 328px;
+    height: 48px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+    background-color: #ff6b00;
+    border-color: #ff6b00;
   }
 
   #click button:hover {
     background-color: #fff5e1;
     color: #fb6f2e;
     border-color: #eee9e8;
+    cursor: pointer;
   }
 
   #onepro button:hover,
@@ -1736,56 +1677,52 @@ footer {
     display: none;
     grid-column-gap: 140px;
     justify-content: center;
-    grid-template-columns: repeat(3, 304px);
-    width: 100%;
-    background-color: #9f5353;
-    transition: 0.3s;
-    border-radius: 60px;
-    margin-top: -40rem;
+    grid-template-columns: repeat(4, 205px);
+    background-color: #000000d4;
+    border-radius: 20px;
+    margin-top: -35rem;
     margin-left: 5rem;
-    padding-top: 7rem;
+    padding-right: 12rem;
+    padding-left: 12px;
     z-index: 10;
-    box-shadow: 10px 10px 10px 10px #745858;
+    box-shadow: 5px 5px 5px 2px #e9e0e0;
+    overflow-y: scroll;
+    height: 700px;
+  }
+
+  #sixpic::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  #sixpic::-webkit-scrollbar-thumb {
+    background-color: #f87b33;
+    border-radius: 10px;
   }
 
   #close-btn-new {
+    display: none;
     position: absolute;
-    right: -787px;
-    z-index: 10;
-    margin-top: -6rem;
-    background-color: #a14d4d;
     border: none;
+    left: 902px;
     font-weight: 800;
-    color: white;
+    background-color: #0000;
+    color: rgb(252, 249, 249);
     font-family: cursive;
     font-size: 32px;
-  }
-
-  #one {
-    width: 108%;
-    margin-top: 98px;
     cursor: pointer;
   }
 
-  #onepro {
-    background-image: url(./images/Missions.png);
-    display: flex;
-    z-index: 2;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    margin-top: 0;
-    cursor: pointer;
+  #close-btn-new::after {
+    content: 'X';
   }
 
-  #onepro:hover {
-    background-image: url(./images/Missions.png);
-    background-repeat: no-repeat;
-    background-size: 95% 100%;
-    transition: none;
-    transform: scale(1.07);
-    cursor: pointer;
+  .blur {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    /* Black w/opacity/see-through */
   }
 
+  #onepro,
   #twopro,
   #threepro,
   #fourpro,
@@ -1794,9 +1731,10 @@ footer {
     display: none;
     cursor: pointer;
     background-color: #eb8c51;
-    margin-top: 23rem;
+    margin-top: 22.7rem;
   }
 
+  #one:hover #onepro,
   #two:hover #twopro,
   #three:hover #threepro,
   #four:hover #fourpro,
@@ -1805,41 +1743,72 @@ footer {
     display: block;
     cursor: pointer;
     font-size: 2px;
-    background-color: #eb8c51;
   }
 
-  #twom {
-    margin-top: 115px;
-    font-family: "Crete Round", serif;
-    font-weight: 800;
+  #one:hover .blur,
+  #two:hover .blur,
+  #three:hover .blur,
+  #four:hover .blur,
+  #five:hover .blur,
+  #six:hover .blur {
+    background-color: rgba(0, 0, 0, 0);
+
+    /* Black w/opacity/see-through */
+  }
+
+  .twom,
+  #threem {
+    padding-top: 176px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 24px;
-    color: #172b4d;
+    color: #fff;
+    font-family: "Crete Round", serif;
   }
 
-  #twop {
-    color: #00040b;
+  #fourm,
+  #fivem {
+    padding-top: 176px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Crete Round", serif;
+  }
+
+  .twop,
+  #threep,
+  #fourp,
+  #fivep,
+  #sixp {
+    color: #f5f6f8;
     font-weight: 600;
     margin-left: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #8993a4;
-    background: rgba(255, 255, 255, 0.24);
+    background: rgb(16 0 0 / 44%);
+    width: 289px;
   }
 
-  #twos {
-    color: #00040b;
+  .twos,
+  #threes,
+  #fours,
+  #fives,
+  #sixs {
+    color: #f9fafc;
   }
 
-  #two:hover #twom,
-  #two:hover #twop,
-  #two:hover #twos {
+  #one:hover .twom,
+  #one:hover .twop,
+  #one:hover .twos {
     display: none;
   }
 
-  #threem {
-    margin-top: 145px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 20px;
+  #two:hover .twom,
+  #two:hover .twop,
+  #two:hover .twos {
+    display: none;
   }
 
   #three:hover #threem,
@@ -1848,24 +1817,10 @@ footer {
     display: none;
   }
 
-  #fourm {
-    margin-top: 90px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 25px;
-  }
-
   #four:hover #fourm,
   #four:hover #fourp,
   #four:hover #fours {
     display: none;
-  }
-
-  #fivem {
-    margin-top: 90px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 32px;
   }
 
   #five:hover #fivem,
@@ -1874,93 +1829,193 @@ footer {
     display: none;
   }
 
-  #sixm {
-    margin-top: 115px;
-    font-family: "Crete Round", serif;
-    font-weight: 400;
-    font-size: 15px;
-  }
-
   #six:hover #sixm,
   #six:hover #sixp,
   #six:hover #sixs {
     display: none;
   }
 
+  .sim {
+    padding-top: 86px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 32px;
+    color: #fff;
+    font-family: "Crete Round", serif;
+  }
+
+  #one {
+    width: 326px;
+    background-image: url(./images/Missions.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
+    background-repeat: no-repeat;
+    height: 409px;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
+  }
+
+  #one:hover {
+    background-image: url(./images/Rockets.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 409px;
+    transform: scale(1.08);
+    transition: 500ms;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
+  }
+
   #two {
     width: 326px;
     background-image: url(./images/tttttt.jpg);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: 10;
+    background-size: cover;
+    height: 409px;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
   }
 
   #two:hover {
     background-image: url(./images/todolist.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    background-size: 100% 90%;
-    transform: scale(1);
+    background-size: cover;
+    height: 409px;
+    transform: scale(1.08);
+    transition: 500ms;
+    border: 3px solid rgb(245, 121, 6);
     cursor: pointer;
-    border-style: groove;
   }
 
   #three {
     width: 326px;
     background-image: url(./images/Screenshot\ 2022-10-06\ 130315.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
+    height: 409px;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
   }
 
   #three:hover {
     background-image: url(./images/Screenshot\ 2022-10-06\ 130423.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: 2;
-    transition: none;
+    display: flex;
+    flex-direction: column;
+    height: 409px;
+    transform: scale(1.08);
+    transition: 500ms;
+    border: 3px solid rgb(245, 121, 6);
     cursor: pointer;
   }
 
   #four {
-    width: 342px;
-    margin-top: 87px;
+    background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
+    width: 326px;
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
+    background-repeat: no-repeat;
+    height: 409px;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
   }
 
   #four:hover {
     background-image: url(./images/Screenshot\ from\ 2022-12-29\ 13-50-10.png);
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    background-size: 95% 100%;
-    transition: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 409px;
+    transform: scale(1.08);
+    transition: 500ms;
+    border: 3px solid rgb(245, 121, 6);
     cursor: pointer;
   }
 
   #five {
     width: 326px;
     background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-20-18.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    margin-top: 80px;
-    background-size: 100% 100%;
+    height: 409px;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
   }
 
   #five:hover {
     background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-20-43.png);
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transition: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 409px;
+    transform: scale(1.08);
+    transition: 500ms;
+    border: 3px solid rgb(245, 121, 6);
     cursor: pointer;
   }
 
   #six {
     width: 326px;
     background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-37-30.png);
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    margin-top: 80px;
-    background-size: 100% 100%;
+    height: 409px;
+    border: 3px solid rgb(245, 121, 6);
+    cursor: pointer;
   }
 
   #six:hover {
     background-image: url(./images/Screenshot\ from\ 2022-12-29\ 14-37-47.png);
+    position: relative;
+    bottom: 50px;
+    margin-left: 24px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    transition: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 409px;
+    transform: scale(1.08);
+    transition: 500ms;
+    border: 3px solid rgb(245, 121, 6);
     cursor: pointer;
   }
 
@@ -1975,16 +2030,13 @@ footer {
     z-index: 0;
   }
 
-  #ahead {
+  #ahead,
+  #aclick {
     margin-left: 142px;
   }
 
   #apara {
     width: 500px;
-    margin-left: 142px;
-  }
-
-  #aclick {
     margin-left: 142px;
   }
 
@@ -1999,40 +2051,26 @@ footer {
 
   .bulletoneagain {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 94px;
-    width: 100%;
-    background-color: #1c1a19;
+    gap: 190px;
     justify-content: center;
   }
 
-  #bullettwo {
-    margin-left: 90px;
+  #bulletone,
+  #bulletthree,
+  #bulletfive {
+    padding-left: 0;
   }
 
-  #maintwo {
-    display: flex;
-    flex-direction: column;
-    margin-top: 93px;
-  }
-
-  #bulletfour {
-    margin-left: 90px;
-  }
-
+  #maintwo,
   #mainthree {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-  }
-
-  #bulletfive {
-    margin-right: 100px;
+    margin-top: -2px;
   }
 
   #bulletsix {
-    margin-left: 120px;
+    margin-left: 0;
+    line-height: 2.2rem;
   }
 
   #maincontact {
@@ -2052,17 +2090,10 @@ footer {
     margin-left: 100px;
   }
 
-  #name {
-    width: 450px;
-  }
-
-  #email {
-    width: 450px;
-  }
-
+  #name,
+  #email,
   #txt-area {
     width: 450px;
-    height: 100px;
   }
 
   .form {

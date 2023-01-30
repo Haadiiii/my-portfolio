@@ -23,16 +23,20 @@ const modalInformation = {
     'A simple todo list app that allows users to add, delete, edit, and clear all completed tasks, built with HTML, CSS, Javascript and webpack.',
   description2:
     'This is a webapp which uses real live data from the SpaceX API. It is an application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
-  description3: 'this is a project that shows the covid-19 cases in the world and in each country, it shows the number of cases, deaths, and recovered cases. And it shows the number of cases in the last 24 hours.',
+  description3:
+    'this is a project that shows the covid-19 cases in the world and in each country, it shows the number of cases, deaths, and recovered cases. And it shows the number of cases in the last 24 hours.',
   imageSrc: './images/todolist.png',
-  description4: 'It is a single page website with two connected pages books and category in book page you will add books and Remove book through connect API and also watch the lists and progress of books.',
-  description5: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
-  description6: 'this is a Budget App with Ruby on Rails, it allows you to create a user, create a group, create a transaction, you can also see the total amount of money spent in the group, and the total amount of money spent by each user, and the total amount of money spent by each user in the group.',
+  description4:
+    'It is a single page website with two connected pages books and category in book page you will add books and Remove book through connect API and also watch the lists and progress of books.',
+  description5:
+    'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.',
+  description6:
+    'this is a Budget App with Ruby on Rails, it allows you to create a user, create a group, create a transaction, you can also see the total amount of money spent in the group, and the total amount of money spent by each user, and the total amount of money spent by each user in the group.',
   button1: 'See Live ',
   button2: 'See Source ',
   li: 'html',
   li2: 'Bootstrap',
-  li3: 'Ruby on rails',
+  li3: 'Ruby/on/rails',
   li4: 'css',
   li5: 'JavaScript',
   li6: 'React',
@@ -42,7 +46,6 @@ const modalInformation = {
   li10: 'Rspec',
   li11: 'Jest',
   li12: 'Capybara',
-
 };
 
 const mainModal = document.querySelector('.main-modal');
@@ -117,7 +120,7 @@ mainModalTwo.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://haadiiii.github.io/todo-list/dist/">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
+          <button class="live-button"><a href="https://haadii-todos.netlify.app">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
           <button class="source-button"><a href="https://github.com/Haadiiii/todo-list">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
@@ -272,8 +275,8 @@ mainModalSix.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://budget-website.herokuapp.com/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/haadii-budget-app">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a href="https://budget-website.herokuapp.com/">${modalInformation.button1} </a><img src="images/Icon.png"></button>
+          <button class="source-button"><a href="https://github.com/Haadiiii/haadii-budget-app">${modalInformation.button2} </a><img src="images/Vector.png"></button>
       </div>
       
   </div>
@@ -304,6 +307,7 @@ const sixPic = document.getElementById('sixpic');
 
 openModalButtons.addEventListener('click', () => {
   sixPic.style.display = 'grid';
+  closeModalButtons.style.display = 'block';
 });
 
 closeModalButtons.addEventListener('click', () => {
