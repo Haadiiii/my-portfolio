@@ -81,8 +81,8 @@ mainModal.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://deploy-preview-38--gilded-cucurucho-f6c94c.netlify.app/">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/space-travelers-capstone">${modalInformation.button2}</a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a target="_blank" href="https://deploy-preview-38--gilded-cucurucho-f6c94c.netlify.app/">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a target="_blank" href="https://github.com/Haadiiii/space-travelers-capstone">${modalInformation.button2}</a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -120,8 +120,8 @@ mainModalTwo.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://haadii-todos.netlify.app">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/todo-list">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a target="_blank" href="https://haadii-todos.netlify.app">${modalInformation.button1}</a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a target="_blank" href="https://github.com/Haadiiii/todo-list">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -159,8 +159,8 @@ mainModalThree.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://pokedoki-app.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/Pokemon-App">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a target="_blank" href="https://pokedoki-app.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a target="_blank" href="https://github.com/Haadiiii/Pokemon-App">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -198,8 +198,8 @@ mainModalFour.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://haadii-bookstore.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/Bookstore">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a target="_blank" href="https://haadii-bookstore.netlify.app/">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a target="_blank" href="https://github.com/Haadiiii/Bookstore">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -236,8 +236,8 @@ mainModalFive.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://recipe-website.herokuapp.com/users/sign_in">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/haadii-recipe-app">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
+          <button class="live-button"><a target="_blank" href="https://recipe-website.herokuapp.com/users/sign_in">${modalInformation.button1} </a><img src="./images/Icon.png"></button>
+          <button class="source-button"><a target="_blank" href="https://github.com/Haadiiii/haadii-recipe-app">${modalInformation.button2} </a><img src="./images/Vector.png"></button>
       </div>
       
   </div>
@@ -274,8 +274,8 @@ mainModalSix.innerHTML = `
       </div>
 
       <div class="modal-button">
-          <button class="live-button"><a href="https://budget-website.herokuapp.com/">${modalInformation.button1} </a><img src="images/Icon.png"></button>
-          <button class="source-button"><a href="https://github.com/Haadiiii/haadii-budget-app">${modalInformation.button2} </a><img src="images/Vector.png"></button>
+          <button class="live-button"><a target="_blank" href="https://budget-website.herokuapp.com/">${modalInformation.button1} </a><img src="images/Icon.png"></button>
+          <button class="source-button"><a target="_blank" href="https://github.com/Haadiiii/haadii-budget-app">${modalInformation.button2} </a><img src="images/Vector.png"></button>
       </div>
       
   </div>
