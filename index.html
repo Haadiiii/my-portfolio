@@ -5,64 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hadi's portifolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
     <header>
-      <nav>
-        <div class="wel"><a href="">WELCOME</a></div>
-        <div id="menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+      <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6">
+        <div class="wel">
+          <a href="" class="text-white font-bold text-xl tracking-tight"
+            >WELCOME</a
+          >
+        </div>
+        <div id="menu" class="block lg:hidden">
+          <button
+            class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z" />
+            </svg>
+          </button>
         </div>
 
-        <div id="hidden">
+        <!-- <div id="hidden" class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden">
           <div id="beautiful">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <div class="nav-link link1"><a href="#project1">Portfolio</a></div>
-          <hr />
-          <div class="nav-link"><a href="#about">About</a></div>
-          <hr />
-          <div class="nav-link"><a href="#maincontact">contact</a></div>
-          <hr />
-        </div>
-        <div class="main-menu">
-          <ul class="names">
-            <li><a href="#project1">porfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#maincontact">contact</a></li>
+          <div class="text-sm lg:flex-grow">
+            <a href="#project1" class="nav-link link1 block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">Portfolio</a>
+            <hr class="border-b-2 border-gray-600 py-2"/>
+            <a href="#about" class="nav-link block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white mr-4">About</a>
+            <hr class="border-b-2 border-gray-600 py-2"/>
+            <a href="#maincontact" class="nav-link block mt-4 lg:inline-block lg:mt-0 text-gray-400 hover:text-white">contact</a>
+          </div>
+        </div> -->
+        <div class="main-menu lg:flex lg:items-center lg:w-auto hidden">
+          <ul
+            class="names lg:flex flex-wrap justify-center items-center text-base pt-4 lg:pt-0"
+          >
+            <li class="lg:mr-8">
+              <a
+                href="#project1"
+                class="nav-link text-gray-400 hover:text-white"
+                >porfolio</a
+              >
+            </li>
+            <li class="lg:mr-8">
+              <a href="#about" class="nav-link text-gray-400 hover:text-white"
+                >About</a
+              >
+            </li>
+            <li class="lg:mr-8">
+              <a
+                href="#maincontact"
+                class="nav-link text-gray-400 hover:text-white"
+                >contact</a
+              >
+            </li>
             <li class="mail-icon">
               <a href="#maincontact"
-                ><img src="./images/Icon-Mail.png" alt=""
+                ><img src="./images/Icon-Mail.png" alt="" class="h-6 w-6"
               /></a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="good">
-      <h1 class="why">
+    <section class="bg-black h-[600px] flex flex-col justify-center gap-7">
+      <h1 class="text-4xl font-extrabold text-orange-500 ml-10">
         Hey there! <br />
         I'm Hamid Ali(Haadii)
       </h1>
       <div id="popular">
-        <p id="how">
-          I’am a Full-Stack web developer <span class="auto-change"></span>
+        <p id="how" class="text-xl text-white ml-10">
+          I’am a Full-Stack web developer
         </p>
-        <p id="nice">
-          I can help you build a product , feature or website Look through some
+        <p
+          id="nice"
+          class="text-lg text-white xl:w-1/4 lg:w-1/4 md:w-2/4 sm:w-3/4 w-3/4 ml-10"
+        >
+          I can help you build a product, feature or website. Look through some
           of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
+          you need coded, don’t hesitate to contact me.
         </p>
       </div>
       <div id="container">
-        <ul>
+        <ul class="flex space-x-4 ml-10">
           <li class="hover">
             <a href="https://github.com/Haadiiii"
               ><img src="./images/Vector1.png" alt="GitHub Icon"
@@ -91,25 +129,26 @@
         </ul>
       </div>
     </section>
-    <section id="main">
-      <div>
-        <div class="mainline">
-          <h2 class="head">My Recent Work</h2>
-
-          <div class="line">
-            <img src="./images/Vector(5).png" alt="Horizontal Line" />
-          </div>
+    <section class="flex flex-col gap-7 justify-center">
+      <div class="flex flex-col items-center justify-center gap-7">
+        <div class="flex flex-col mt-11 gap-7">
+          <h2 class="font-serif font-semibold text-3xl">My Recent Work</h2>
         </div>
-        <div id="project1">
+        <hr class="border-gray-600 w-1/4" />
+        <div
+          id="project1"
+          class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+        >
           <div class="img1">
             <img
               src="./images/Screenshotfrom2023-01-2508-00-31.png"
               alt="placeholder image"
             />
-            <div id="projectheader">
-              <h3 class="prohead">Multi-Projects Stories</h3>
-
-              <div class="para">
+            <div id="projectheader" class="p-4">
+              <h3 class="text-xl font-extrabold mb-2">
+                Multi-Projects Stories
+              </h3>
+              <div class="para text-gray-500 text-base mb-4">
                 <p>
                   Projects are the best way to show your skills and experience,
                   so I have made some projects to show my skills and experience
@@ -118,224 +157,378 @@
                 </p>
               </div>
               <div>
-                <ul id="social">
-                  <li><a href="">css3</a></li>
-                  <li><a href="">html5</a></li>
-                  <li><a href="">bootstrap</a></li>
-                  <li><a href="">Ruby</a></li>
-                  <li>Ruby/on/rails</li>
-                  <li>capybara</li>
-                  <li>rspec</li>
-                  <li>Javascript</li>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>gems</li>
+                <ul id="social" class="flex flex-wrap">
+                  <li class="mr-2 mb-2">
+                    <a href="" class="text-gray-500">css3</a>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <a href="" class="text-gray-500">html5</a>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <a href="" class="text-gray-500">bootstrap</a>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <a href="" class="text-gray-500">Ruby</a>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">Ruby/on/rails</span>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">capybara</span>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">rspec</span>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">Javascript</span>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">React</span>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">Redux</span>
+                  </li>
+                  <li class="mr-2 mb-2">
+                    <span class="text-gray-500">gems</span>
+                  </li>
                 </ul>
               </div>
-              <div id="click">
-                <button class="btn" type="button">See All Projects</button>
-              </div>
-            </div>
-          </div>
-          <div id="sixpic">
-            <button id="close-btn-new" type="button"></button>
-            <div id="one">
-              <div class="blur">
-                <div class="twom">
-                  <h2 class="tm">Space Travelers</h2>
-                </div>
-                <div class="twop">
-                  <p>
-                    This is a 3 pages website where you reseve Rockets, Add
-                    missions and see profile.
-                  </p>
-                </div>
-                <div class="twos">
-                  <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>React/redux</li>
-                  </ul>
-                </div>
-                <div id="onepro">
-                  <button class="btn1" type="button">See Project</button>
-                </div>
-              </div>
-            </div>
-            <div id="two">
-              <div class="blur">
-                <div class="twom">
-                  <h2 class="tm">ToDo List</h2>
-                </div>
-                <div class="twop">
-                  <p>
-                    this ia ToDo list project, where you can add delete and edit
-                    daily tasks.
-                  </p>
-                </div>
-                <div class="twos">
-                  <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>Javascript</li>
-                  </ul>
-                </div>
-                <div id="twopro">
-                  <button class="btn2" type="button">See Project</button>
-                </div>
-              </div>
-            </div>
-            <div id="three">
-              <div class="blur">
-                <div id="threem">
-                  <h3 class="thm">Pokemon App</h3>
-                </div>
-                <div id="threep">
-                  <p>
-                    this website is biult for microverse capstone project. it shows the list of top 20 Pokemon.
-                  </p>
-                </div>
-                <div id="threes">
-                  <ul>
-                    <li>html5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>webpack</li>
-                  </ul>
-                </div>
-                <div id="threepro">
-                  <button class="btn3" data-modal-target="#modal" type="button">
-                    See Project
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div id="four">
-              <div class="blur">
-                <div id="fourm">
-                  <h4 class="fm">BookStore</h4>
-                </div>
-                <div id="fourp">
-                  <p>
-                    It is a single page website with two connected pages books
-                    and category in book page you will add books and Remove
-                    book.
-                  </p>
-                </div>
-                <div id="fours">
-                  <ul>
-                    <li>html5</li>
-                    <li>CSS3</li>
-                    <li>React/redux</li>
-                  </ul>
-                </div>
-                <div id="fourpro">
-                  <button class="btn4" type="button">See Project</button>
-                </div>
-              </div>
-            </div>
-            <div id="five">
-              <div class="blur">
-                <div id="fivem">
-                  <h5 class="fim">Recipe App</h5>
-                </div>
-                <div id="fivep">
-                  <p>
-                    The Recipe app keeps track of all your recipes, ingredients,
-                    and inventory. It will allow you to save ingredients
-                  </p>
-                </div>
-                <div id="fives">
-                  <ul>
-                    <li>Ruby</li>
-                    <li>bootstrap</li>
-                    <li>Ruby on rails</li>
-                  </ul>
-                </div>
-                <div id="fivepro">
-                  <button class="btn5" type="button">See Project</button>
-                </div>
-              </div>
-            </div>
-            <div id="six">
-              <div class="blur">
-                <div id="sixm">
-                  <h6 class="sim">Budget App</h6>
-                </div>
-                <div id="sixp">
-                  <p>
-                    this is a Budget App with Ruby on Rails, it allows you to
-                    create a user, create a group, create a transaction
-                  </p>
-                </div>
-                <div id="sixs">
-                  <ul>
-                    <li>Ruby</li>
-                    <li>bootstrap</li>
-                    <li>Ruby on rails</li>
-                  </ul>
-                </div>
-                <div id="sixpro">
-                  <button class="btn6" type="button">See Project</button>
-                </div>
+              <div id="click" class="mt-4">
+                <button
+                  class="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  See All Projects
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div id="about">
-        <div>
-          <h1 id="ahead">About me</h1>
+      <div
+        class="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 justify-center items-center md:ml-20 sm:ml-10 overflow-hidden"
+       >
+        <!-- <div class="swiper-container"> -->
+          <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+            <img
+             src="/images/Missions.png" alt="Space Travelers" />
+            <div class="px-6 p-4">
+              <h3 class="text-xl font-extrabold mb-2">Space Travelers</h3>
+              <p class="text-gray-700 text-base">
+                This is a 3 pages website where you reserve Rockets, Add
+                missions and see profile.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul class="flex">
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#html</span
+                  >
+                </li>
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#css</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >#React/redux</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              >
+                See Project
+              </button>
+            </div>
+          <!-- </div> -->
         </div>
+        <div class="swiper-container">
+          <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+            <img src="/images/tttttt.jpg" alt="Space Travelers" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">todo-List</div>
+              <p class="text-gray-700 text-base">
+                this ia ToDo list project, where you can add delete and edit
+                daily tasks.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul class="flex">
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#html</span
+                  >
+                </li>
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#css</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >Javascript</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="twopro" class="px-6 pt-4 pb-2">
+              <button
+                class="btn2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                type="button"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+            <img
+              src="/images/Screenshot from 2022-12-29 13-50-10.png"
+              alt="Space Travelers"
+            />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Pokemon App</div>
+              <p class="text-gray-700 text-base">
+                this website is biult for microverse capstone project. it shows
+                the list of top 20 Pokemon.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul class="flex">
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#html</span
+                  >
+                </li>
 
-        <div id="apara">
-          <p>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
-          </p>
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#css</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >Javascript</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >Webpack</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="threepro" class="px-6 pt-4 pb-2">
+              <button
+                class="btn3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                data-modal-target="#modal"
+                type="button"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
         </div>
-        <div id="aclick">
-          <a target="_blank"
+        <div class="swiper-container">
+          <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+            <img src="/images/tttttt.jpg" alt="Space Travelers" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">todo-List</div>
+              <p class="text-gray-700 text-base">
+                this ia ToDo list project, where you can add delete and edit
+                daily tasks.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul class="flex">
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#html</span
+                  >
+                </li>
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#css</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >Javascript</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="twopro" class="px-6 pt-4 pb-2">
+              <button
+                class="btn2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                type="button"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+            <img src="/images/tttttt.jpg" alt="Space Travelers" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">todo-List</div>
+              <p class="text-gray-700 text-base">
+                this ia ToDo list project, where you can add delete and edit
+                daily tasks.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul class="flex">
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#html</span
+                  >
+                </li>
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#css</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >Javascript</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="twopro" class="px-6 pt-4 pb-2">
+              <button
+                class="btn2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                type="button"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container">
+          <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden">
+            <img src="/images/tttttt.jpg" alt="Space Travelers" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">todo-List</div>
+              <p class="text-gray-700 text-base">
+                this ia ToDo list project, where you can add delete and edit
+                daily tasks.
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <ul class="flex">
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#html</span
+                  >
+                </li>
+                <li class="mr-2">
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                    >#css</span
+                  >
+                </li>
+                <li>
+                  <span
+                    class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                    >Javascript</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="twopro" class="px-6 pt-4 pb-2">
+              <button
+                class="btn1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                type="button"
+              >
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-black text-white mt-44">
+      <div class="flex flex-col h-full mt-20">
+        <div class="w-full md:w-1/2 p-6 flex flex-col gap-7">
+          <h1 class="text-5xl font-bold mb-6 text-orange-500 ml-10">
+            About me
+          </h1>
+          <p
+            class="text-lg text-white xl:w-2/4 lg:w-3/4 md:w-3/4 sm:w-3/4 w-3/4 ml-10"
+          >
+            Hello, I’m a software developer! I can help you build a product,
+            feature or website. Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+          <a
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ml-10 w-1/6"
+            target="_blank"
             href="https://docs.google.com/document/d/1dZyjUPAMjUA_o3MQJyU--QyRRiE8h0tnwyraMOWNfkI/edit?usp=sharing"
-            >Get My resume
+          >
+            Get my resume
           </a>
         </div>
-        <div id="aline">
-        </div>
-        <div class="bulletoneagain">
-          <div id="mainbullet">
-            <div>
-              <ul id="bulletone">
+        <hr class="border-white" />
+        <div class="w-full md:w-1/2 p-8">
+          <div
+            class="flex flex-col justify-between items-center sm:flex-col md:flex-row lg:flex-row xl:flex-row gap-10"
+          >
+            <div class="mr-8">
+              <ul class="flex items-center text-4xl">
                 <li>
-                  <img src="./images/Rectangle55.png" alt="Diamond Icon" />
+                  <img
+                    class="mr-2"
+                    src="./images/Rectangle55.png"
+                    alt="Diamond Icon"
+                  />
                 </li>
                 <li>Language</li>
               </ul>
-            </div>
-            <div>
-              <ul id="bullettwo">
+              <ul class="ml-8 text-xl flex flex-col gap-3">
                 <li>Javascript</li>
                 <li>Ruby</li>
                 <li>Html</li>
-                <li>css</li>
+                <li>Css</li>
               </ul>
             </div>
-          </div>
-          <div id="maintwo">
-            <div>
-              <ul id="bulletthree">
+            <div class="mr-0">
+              <ul class="flex items-center text-4xl">
                 <li>
-                  <img src="./images/Rectangle56.png" alt="Rectangle Icon" />
+                  <img
+                    class="mr-2"
+                    src="./images/Rectangle56.png"
+                    alt="Rectangle Icon"
+                  />
                 </li>
                 <li>Frameworks</li>
               </ul>
-            </div>
-            <div>
-              <ul id="bulletfour">
+              <ul class="ml-8 text-xl flex flex-col gap-3">
                 <li>Bootstrap</li>
                 <li>Ruby and Rails</li>
                 <li>RSPec</li>
@@ -343,18 +536,18 @@
                 <li>Selenium</li>
               </ul>
             </div>
-          </div>
-          <div id="mainthree">
             <div>
-              <ul id="bulletfive">
+              <ul class="mr-32 flex items-center text-4xl">
                 <li>
-                  <img src="./images/Rectangle57.png" alt="Square Icon" />
+                  <img
+                    class="mr-2"
+                    src="./images/Rectangle57.png"
+                    alt="Square Icon"
+                  />
                 </li>
                 <li>Skills</li>
               </ul>
-            </div>
-            <div>
-              <ul id="bulletsix">
+              <ul class="ml-8 text-xl flex flex-col gap-3">
                 <li>Codekit</li>
                 <li>Github</li>
                 <li>Codepen</li>
@@ -366,45 +559,53 @@
         </div>
       </div>
     </section>
+
     <!-- ===========Form Section========= -->
     <section>
-      <div id="maincontact">
-        <div class="contact">
-          <h2>
-            I'm always interested in hearing about new projects, so if you'd
-            like to chat please get in touch.
-          </h2>
-        </div>
-        <div class="form-contact">
-          <form action="https://formspree.io/f/mjvlqygj" method="post">
-            <ul id="form-contact">
-              <li>
+      <div class="container mx-auto px-4 py-8 lg:py-16">
+        <div class="lg:flex lg:justify-between lg:items-center">
+          <div class="lg:w-1/2 lg:mr-8">
+            <div class="text-2xl font-bold mb-4">
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </div>
+            <form action="https://formspree.io/f/mjvlqygj" method="post">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-400 mb-2"
+                  >Full Name</label
+                >
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  onchange="changeHandler()"
+                  class="w-full border-gray-400 border-2 rounded py-2 px-3"
                   maxlength="30"
                   required
                   placeholder="Full name"
                 />
-              </li>
-              <li>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-400 mb-2"
+                  >Email Address</label
+                >
                 <input
                   type="email"
                   name="email"
                   id="email"
-                  onchange="changeHandler()"
+                  class="w-full border-gray-400 border-2 rounded py-2 px-3"
                   required
                   placeholder="Email Address"
-                  onkeyup="validateEmail()"
                 />
-              </li>
-              <li>
+                <span id="emailError" class="error"></span>
+              </div>
+              <div class="mb-4">
+                <label for="txt-area" class="block text-gray-400 mb-2"
+                  >Message</label
+                >
                 <textarea
-                  class="txt-area"
                   name="txt-area"
                   id="txt-area"
+                  class="w-full border-gray-400 border-2 rounded py-2 px-3"
                   onchange="changeHandler()"
                   maxlength="500"
                   required
@@ -412,25 +613,33 @@
                   rows="5"
                   placeholder="Enter text here"
                 ></textarea>
-              </li>
-            </ul>
-
-            <div class="form">
-              <button id="subit" type="submit" onclick="return validateForm()">
-                Get in touch
-              </button>
-              <span id="emailError" class="error"></span>
-              <button class="btnx" id="reset" type="reset">Reset</button>
-            </div>
-          </form>
+              </div>
+              <div class="flex justify-between items-center">
+                <button
+                  id="submit"
+                  type="submit"
+                  onclick="return validateForm()"
+                  class="bg-primary text-white py-2 px-4 rounded hover:bg-gray-800"
+                >
+                  Get in touch
+                </button>
+                <button
+                  id="reset"
+                  type="reset"
+                  class="bg-white text-black py-2 px-4 rounded hover:bg-gray-100"
+                >
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <footer>
-        <div id="c-line">
-          <div id="footer"></div>
-        </div>
-        <div id="s-icons">
-          <ul>
+
+      <footer class="flex flex-col justify-center  gap-8">
+        <hr class="border-gray-400 bg-black">
+        <div id="s-icons flex justify-center">
+          <ul class="flex justify-center gap-5">
             <li class="hover">
               <a href="https://github.com/Haadiiii"
                 ><img src="./images/Vector1.png" alt="GitHub Icon"
@@ -458,16 +667,17 @@
             </li>
           </ul>
         </div>
-        <div class="l-line">
-        </div>
+        <div class="l-line"></div>
       </footer>
     </section>
+    <!-- create here all modal with same classes in tailwind css -->
+    
     <div class="main-modal"></div>
     <div class="main-modal-two"></div>
     <div class="main-modal-three"></div>
     <div class="main-modal-four"></div>
     <div class="main-modal-five"></div>
-    <div class="main-modal-six"></div>
+    <div class="main-modal-six"></div>        
 
     <script src="./my.js" defer></script>
   </body>

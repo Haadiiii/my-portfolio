@@ -1,22 +1,23 @@
-const hamburger = document.querySelector('#beautiful');
-const navMenu = document.querySelector('#hidden');
-const nextHamburger = document.querySelector('#menu');
+// const hamburger = document.querySelector('#beautiful');
+// const navMenu = document.querySelector('#hidden');
+// const nextHamburger = document.querySelector('#menu');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
+// hamburger.addEventListener('click', () => {
+//   hamburger.classList.toggle('active');
+//   navMenu.classList.toggle('active');
+// });
 
-nextHamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
+// nextHamburger.addEventListener('click', () => {
+//   hamburger.classList.toggle('active');
+//   navMenu.classList.toggle('active');
+// });
 
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-  nextHamburger.classList.remove('active');
-}));
+// document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+//   hamburger.classList.remove('active');
+//   navMenu.classList.remove('active');
+//   nextHamburger.classList.remove('active');
+// }));
+
 
 const modalInformation = {
   description:
@@ -51,7 +52,7 @@ const modalInformation = {
 const mainModal = document.querySelector('.main-modal');
 
 mainModal.innerHTML = `
-  <div class="modal">
+  <div class="modal hidden">
     <div class="modal-header">
       <div class="title">
           <h2 class="modal-headm">Space Travelers Hub</h2>
@@ -92,7 +93,7 @@ mainModal.innerHTML = `
 const mainModalTwo = document.querySelector('.main-modal-two');
 
 mainModalTwo.innerHTML = `
-  <div class="modal2">
+  <div class="modal2 hidden">
     <div class="modal-header">
       <div class="title">
           <h2 class="modal-headm">todo-list</h2>
@@ -131,7 +132,7 @@ mainModalTwo.innerHTML = `
 const mainModalThree = document.querySelector('.main-modal-three');
 
 mainModalThree.innerHTML = `
-<div class="modal3">
+<div class="modal3 hidden">
     <div class="modal-header">
       <div class="title">
           <h2 class="modal-headm">Pokemon App</h2>
@@ -169,7 +170,7 @@ mainModalThree.innerHTML = `
 const mainModalFour = document.querySelector('.main-modal-four');
 
 mainModalFour.innerHTML = `
-<div class="modal4">
+<div class="modal4 hidden">
     <div class="modal-header">
       <div class="title">
           <h2 class="modal-headm">BookStore</h2>
@@ -208,7 +209,7 @@ mainModalFour.innerHTML = `
 const mainModalFive = document.querySelector('.main-modal-five');
 
 mainModalFive.innerHTML = `
-<div class="modal5">
+<div class="modal5 hidden">
     <div class="modal-header">
       <div class="title">
           <h2 class="modal-headm">Recipe App</h2>
@@ -246,7 +247,7 @@ mainModalFive.innerHTML = `
 const mainModalSix = document.querySelector('.main-modal-six');
 
 mainModalSix.innerHTML = `
-<div class="modal6">
+<div class="modal6 hidden">
     <div class="modal-header">
       <div class="title">
           <h2 class="modal-headm">Budget App</h2>
